@@ -19,7 +19,7 @@ local colors = {
     bright_white = "#f9f9f9",
 }
 
-function M.colorscheme()
+function M.setup()
     vim.cmd("highlight clear")
     vim.cmd("syntax reset")
 
