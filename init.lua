@@ -33,3 +33,4 @@ function M.colorscheme()
     set(0, "CursorLine", { bg = colors.bright_black })
 end
 
+return M
