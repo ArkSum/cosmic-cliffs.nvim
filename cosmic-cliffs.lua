@@ -42,6 +42,7 @@ function M.colorscheme()
     set(0, "Constant", { fg = colors.blue })
     set(0, "StatusLine", { fg = colors.bright_yellow })
     set(0, "Visual", { bg = colors.gray })
+    set(0, "Pmenu", { fg = colors.bright_white, bg = colors.black })
 end
 
 return M
