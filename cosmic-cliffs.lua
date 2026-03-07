@@ -37,4 +37,8 @@ function M.setup(opts)
     M.colorscheme()
 end
 
+function M.config(opts)
+    M.colorscheme()
+end
+
 return M
