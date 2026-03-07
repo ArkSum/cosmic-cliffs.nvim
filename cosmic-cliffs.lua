@@ -40,6 +40,9 @@ function M.colorscheme()
     set(0, "Function", { fg = colors.bright_cyan })
     set(0, "Constant", { fg = colors.blue })
     set(0, "Todo", { fg = colors.bright_yellow })
+
+    set(0, "@variable.parameter", { fg = colors.bright_yellow })
+    vim.treesitter.start()
 end
 
 return M
