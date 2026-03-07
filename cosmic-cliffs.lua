@@ -17,6 +17,7 @@ local colors = {
     bright_cyan = "#97b5d7",
     white = "#e2c0bd",
     bright_white = "#f9f9f9",
+    gray = "#674c6a"
 }
 
 function M.colorscheme()
@@ -40,6 +41,7 @@ function M.colorscheme()
     set(0, "Function", { fg = colors.bright_cyan })
     set(0, "Constant", { fg = colors.blue })
     set(0, "StatusLine", { fg = colors.bright_yellow })
+    set(0, "Visual", { fg = colors.gray })
 end
 
 return M
