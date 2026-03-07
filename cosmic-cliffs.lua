@@ -2,7 +2,7 @@ local M = {}
 
 local colors = {
     black = "#080309",
-    bright_black = "#95559e",
+    bright_black = "#3e2e40",
     red = "#db4343",
     bright_red = "#ed8f8f",
     green = "#dd9148",
@@ -28,9 +28,12 @@ function M.colorscheme()
 
     local set = vim.api.nvim_set_hl
 
+    -- Here is a comment
     set(0, "Normal", { bg = colors.black, fg = colors.white })
     set(0, "Comment", { bg = colors.black, fg = colors.bright_black })
     set(0, "CursorLine", { bg = colors.bright_black })
+    set(0, "LineNr", { fg = colors.white })
+    set(0, "VertLine", { fg = colors.blue })
 end
 
 return M
