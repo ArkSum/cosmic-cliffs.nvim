@@ -33,7 +33,7 @@ function M.colorscheme()
     set(0, "CursorLine", { bg = colors.bright_black })
 end
 
-function setup()
+function M.setup()
     M.colorscheme()
 end
 
