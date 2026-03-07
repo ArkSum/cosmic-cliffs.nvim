@@ -37,6 +37,7 @@ function M.colorscheme()
     set(0, "VertLine", { fg = colors.blue })
     set(0, "String", { fg = colors.bright_green })
     set(0, "Function", { fg = colors.bright_cyan })
+    set(0, "Constant", { fg = colors.bright_blue })
 end
 
 return M
