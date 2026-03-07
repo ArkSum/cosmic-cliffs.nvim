@@ -20,7 +20,7 @@ local colors = {
     gray = "#674c6a"
 }
 
-function M.colorscheme()
+function M.setup()
     vim.cmd("highlight clear")
     vim.cmd("syntax reset")
 
