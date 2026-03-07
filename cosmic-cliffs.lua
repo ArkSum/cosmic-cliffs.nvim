@@ -28,6 +28,7 @@ function M.colorscheme()
 
     local set = vim.api.nvim_set_hl
 
+    -- TODO: Fix this
     -- Here is a comment
     set(0, "Normal", { bg = colors.black, fg = colors.white })
     set(0, "Comment", { fg = colors.green })
@@ -37,7 +38,8 @@ function M.colorscheme()
     set(0, "VertLine", { fg = colors.blue })
     set(0, "String", { fg = colors.bright_green })
     set(0, "Function", { fg = colors.bright_cyan })
-    set(0, "Constant", { fg = colors.bright_blue })
+    set(0, "Constant", { fg = colors.blue })
+    set(0, "Todo", { fg = colors.bright_yellow })
 end
 
 return M
