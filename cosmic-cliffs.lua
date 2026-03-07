@@ -34,6 +34,7 @@ function M.colorscheme()
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "LineNr", { fg = colors.white })
     set(0, "VertLine", { fg = colors.blue })
+    set(0, "String", { fg = colors.yellow })
 end
 
 return M
