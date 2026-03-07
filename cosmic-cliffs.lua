@@ -34,15 +34,12 @@ function M.colorscheme()
     set(0, "Comment", { fg = colors.green })
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "Keyword", { fg = colors.magenta })
-    set(0, "LineNr", { fg = colors.white })
+    set(0, "LineNr", { fg = colors.bright_black })
     set(0, "VertLine", { fg = colors.blue })
     set(0, "String", { fg = colors.bright_green })
     set(0, "Function", { fg = colors.bright_cyan })
     set(0, "Constant", { fg = colors.blue })
-    set(0, "Todo", { fg = colors.bright_yellow })
-
-    set(0, "@variable.parameter", { fg = colors.bright_yellow })
-    vim.treesitter.start()
+    set(0, "StatusLine", { fg = colors.bright_yellow })
 end
 
 return M
