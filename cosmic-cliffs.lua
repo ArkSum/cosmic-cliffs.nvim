@@ -36,6 +36,7 @@ function M.colorscheme()
     set(0, "LineNr", { fg = colors.white })
     set(0, "VertLine", { fg = colors.blue })
     set(0, "String", { fg = colors.bright_green })
+    set(0, "Function", { fg = colors.cyan })
 end
 
 return M
