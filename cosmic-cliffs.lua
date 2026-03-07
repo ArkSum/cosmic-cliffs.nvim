@@ -33,12 +33,4 @@ function M.colorscheme()
     set(0, "CursorLine", { bg = colors.bright_black })
 end
 
-function M.setup(opts)
-    M.colorscheme()
-end
-
-function M.config(opts)
-    M.colorscheme()
-end
-
 return M
