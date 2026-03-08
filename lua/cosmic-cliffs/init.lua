@@ -46,6 +46,7 @@ function M.setup()
 
     -- YELLOWS
     set(0, "Identifier", { fg = colors.yellow })
+    set(0, "@lsp.type.variable", { fg = colors.yellow })
     set(0, "StatusLine", { fg = colors.bright_yellow })
     set(0, "@lsp.type.parameter", { fg = colors.bright_yellow })
 
