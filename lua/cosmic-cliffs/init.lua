@@ -29,33 +29,39 @@ function M.setup()
 
     local set = vim.api.nvim_set_hl
 
-    -- TODO: Fix this
-    -- Here is a comment
-    set(0, "Normal", {
-        bg = colors.black, fg = colors.white
-    })
-    set(0, "Comment", {
-        fg = colors.green
-    })
-    set(0, "CursorLine", {
-        bg = colors.bright_black
-    })
-    set(0, "Identifier", { fg = colors.yellow })
-    set(0, "Keyword", { fg = colors.magenta })
+    -- BLACKS (DIM)
+    set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "LineNr", { fg = colors.bright_black })
-    set(0, "VertLine", { fg = colors.blue })
+    set(0, "Type", { fg = colors.bright_black })
+
+    -- WHITES
+    set(0, "Normal", { fg = colors.white })
+
+    -- GREENS
+    set(0, "Comment", { fg = colors.green })
     set(0, "String", { fg = colors.bright_green })
-    set(0, "Function", { fg = colors.bright_cyan })
+
+    -- YELLOWS
+    set(0, "Identifier", { fg = colors.yellow })
+    set(0, "StatusLine", { fg = colors.bright_yellow })
+    set(0, "Parameter", { fg = colors.bright_yellow })
+
+    -- MAGENTAS
+    set(0, "Keyword", { fg = colors.magenta })
+
+    -- BLUES
+    set(0, "VertLine", { fg = colors.blue })
     set(0, "Constant", { fg = colors.blue })
     set(0, "Boolean", { fg = colors.blue })
-    local value = true
     set(0, "Number", { fg = colors.bright_blue })
-    set(0, "StatusLine", { fg = colors.bright_yellow })
-    set(0, "Visual", { bg = colors.gray })
-    set(0, "Pmenu", { fg = colors.bright_white, bg = colors.black })
+
+    -- CYANS
+    set(0, "Function", { fg = colors.bright_cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
-    set(0, "Type", { fg = colors.bright_black })
-    set(0, "Parameter", { fg = colors.bright_yellow })
+
+    -- GRAYS
+    set(0, "Visual", { bg = colors.gray })
+    local value = true
 end
 
 return M
