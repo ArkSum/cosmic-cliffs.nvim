@@ -1,8 +1,8 @@
 local M = {}
 
 local colors = {
-    black = "#080309",
-    bright_black = "#3e2e40",
+    black = "#18091b",
+    bright_black = "#3d2b40",
     red = "#db4343",
     bright_red = "#ed8f8f",
     green = "#df9c5e",
@@ -34,14 +34,17 @@ function M.setup()
 
     -- WHITES
     -- set(0, "Normal", { fg = colors.white })
+    -- REDS
+    set(0, "Removed", { fg = colors.bright_red })
 
-    -- GREENS
+    -- GREENS -> YELLOWS
     set(0, "Comment", { fg = colors.green })
     set(0, "String", { fg = colors.bright_green })
+    set(0, "Added", { fg = colors.bright_cyan })
 
-    -- YELLOWS
+    -- YELLOWS -> ORANGES
     set(0, "Identifier", { fg = colors.yellow })
-    set(0, "@lsp.type.variable", { fg = colors.yellow })
+    set(0, "@lsp.type.variable", { fg = colors.bright_yellow })
     set(0, "StatusLine", { fg = colors.bright_yellow })
     set(0, "@lsp.type.parameter", { fg = colors.bright_yellow })
 
@@ -49,14 +52,15 @@ function M.setup()
     set(0, "Statement", { fg = colors.magenta })
     set(0, "Keyword", { fg = colors.magenta })
 
-    -- BLUES
+    -- BLUES -> PURPLES
     set(0, "VertLine", { fg = colors.blue })
     set(0, "Constant", { fg = colors.blue })
     set(0, "Boolean", { fg = colors.blue })
     set(0, "Number", { fg = colors.bright_blue })
 
-    -- CYANS
+    -- CYANS -> BLUES
     set(0, "StorageClass", { fg = colors.cyan })
+    set(0, "Changed", { fg = colors.bright_cyan })
     set(0, "Structure", { fg = colors.cyan })
     set(0, "Function", { fg = colors.bright_cyan })
 
