@@ -49,9 +49,10 @@ function M.setup()
     -- SYNTAX HIGHLIGHT GROUPS: PreProcessor
     set(0, "PreProc", { fg = colors.magenta }) -- Top-level
 
+    -- SYNTAX HIGHLIGHT GROUPS: Types
+    set(0, "Type", { fg = colors.blue }) -- Top-level ???
+
     set(0, "VertLine", { fg = colors.purple })
-    set(0, "StorageClass", { fg = colors.blue })
-    set(0, "Structure", { fg = colors.blue })
     set(0, "Changed", { fg = colors.bright_blue })
     set(0, "StatusLine", { fg = colors.bright_orange })
     set(0, "LineNr", { fg = colors.bright_black })
