@@ -32,7 +32,6 @@ function M.setup()
     -- BLACKS (DIM)
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "LineNr", { fg = colors.bright_black })
-    set(0, "Type", { fg = colors.bright_black })
 
     -- WHITES
     set(0, "Normal", { fg = colors.white })
@@ -58,6 +57,9 @@ function M.setup()
 
     -- CYANS
     set(0, "Function", { fg = colors.bright_cyan })
+    set(0, "Type", { fg = colors.cyan })
+    set(0, "StorageClass", { fg = colors.cyan })
+    set(0, "Structure", { fg = colors.cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
 
     -- GRAYS
