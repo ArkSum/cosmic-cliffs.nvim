@@ -68,6 +68,9 @@ function M.setup()
     set(0, "Visual", { bg = colors.gray })
     set(0, "LineNr", { fg = colors.bright_black })
 
+    -- NOICECMDLINE
+    set(0, "NoiceCmdlinePopupBorder", { fg = colors.bright_magenta })
+
     -- NEOTREE
     set(0, "NeoTreeFloatBorder", { fg = colors.bright_magenta })
     set(0, "NeoTreeTitleBar", { fg = colors.magenta })
