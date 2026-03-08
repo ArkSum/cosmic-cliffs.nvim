@@ -40,11 +40,11 @@ function M.setup()
     -- GREENS -> YELLOWS
     set(0, "Comment", { fg = colors.green })
     set(0, "String", { fg = colors.bright_green })
-    set(0, "Added", { fg = colors.bright_cyan })
+    set(0, "Added", { fg = colors.bright_green })
 
     -- YELLOWS -> ORANGES
     set(0, "Identifier", { fg = colors.yellow })
-    set(0, "@lsp.type.variable", { fg = colors.bright_yellow })
+    -- set(0, "@lsp.type.variable", { fg = colors.bright_yellow })
     set(0, "StatusLine", { fg = colors.bright_yellow })
     set(0, "@lsp.type.parameter", { fg = colors.bright_yellow })
 
