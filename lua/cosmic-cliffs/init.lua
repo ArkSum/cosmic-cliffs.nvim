@@ -35,7 +35,7 @@ function M.setup()
 
     -- BLACKS (DIM)
     set(0, "CursorLine", { bg = colors.bright_black })
-    set(0, "LineNr", { fg = colors.bright_black })
+    set(0, "LineNr", { bg = colors.bright_black })
 
     -- WHITES
     set(0, "Normal", { fg = colors.white })
