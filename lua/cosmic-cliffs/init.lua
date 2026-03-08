@@ -29,6 +29,7 @@ function M.setup()
 
     local set = vim.api.nvim_set_hl
 
+    -- These groups are in the order of the NAMING CONVENTIONS section of the syntax.txt help page
     -- SYNTAX HIGHLIGHT GROUPS: Comment
     set(0, "Comment", { fg = colors.yellow })
 
@@ -52,14 +53,26 @@ function M.setup()
     -- SYNTAX HIGHLIGHT GROUPS: Types
     set(0, "Type", { fg = colors.blue }) -- Top-level ???
 
-    set(0, "VertLine", { fg = colors.purple })
+    -- SYNTAX HIGHLIGHT GROUPS: Special
+    -- This is the override that might have been giving me trouble
+    set(0, "Special", { fg = colors.bright_magenta }) -- Top-level
+    set(0, "SpecialChar", { fg = colors.magenta })
+
+    -- SYNTAX HIGHLIGHT GROUPS: Misc
+    set(0, "Error", { fg = colors.bright_white, bg = colors.red })
+    set(0, "Todo", { bg = colors.bright_magenta })
+
+
+    -- SYNTAX HIGHLIGHT GROUPS: Diff
+    set(0, "Added", { fg = colors.bright_yellow })
     set(0, "Changed", { fg = colors.bright_blue })
+    set(0, "Removed", { fg = colors.bright_red })
+
+    set(0, "VertLine", { fg = colors.purple })
     set(0, "StatusLine", { fg = colors.bright_orange })
     set(0, "LineNr", { fg = colors.bright_black })
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "Visual", { bg = colors.gray })
-    set(0, "Added", { fg = colors.bright_yellow })
-    set(0, "Removed", { fg = colors.bright_red })
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
