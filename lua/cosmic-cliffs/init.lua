@@ -46,8 +46,8 @@ function M.setup()
     set(0, "StatusLine", { fg = colors.bright_yellow })
     set(0, "Visual", { bg = colors.gray })
     set(0, "Pmenu", { fg = colors.bright_white, bg = colors.black })
-    set(0, "Typedef", { fg = colors.bright_white })
-    set(0, "Type", { fg = colors.bright_yellow })
+    set(0, "Typedef", { fg = colors.bright_cyan })
+    set(0, "Type", { fg = colors.bright_black })
     set(0, "Parameter", { fg = colors.bright_yellow })
 end
 
