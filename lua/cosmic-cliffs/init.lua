@@ -47,6 +47,7 @@ function M.setup()
     set(0, "Parameter", { fg = colors.bright_yellow })
 
     -- MAGENTAS
+    set(0, "Statement", { fg = colors.magenta })
     set(0, "Keyword", { fg = colors.magenta })
 
     -- BLUES
