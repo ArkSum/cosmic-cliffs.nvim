@@ -46,11 +46,11 @@ function M.setup()
     set(0, "Identifier", { fg = colors.yellow })
     set(0, "@lsp.type.variable", { fg = colors.bright_yellow })
     set(0, "StatusLine", { fg = colors.bright_yellow })
-    set(0, "@lsp.type.parameter", { fg = colors.bright_yellow })
 
     -- MAGENTAS
     set(0, "Statement", { fg = colors.magenta })
     set(0, "Keyword", { fg = colors.magenta })
+    set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
 
     -- BLUES -> PURPLES
     set(0, "VertLine", { fg = colors.blue })
@@ -67,6 +67,26 @@ function M.setup()
     -- GRAYS
     set(0, "Visual", { bg = colors.gray })
     set(0, "LineNr", { fg = colors.bright_black })
+
+    -- NEOTREE
+    set(0, "NeoTreeFloatBorder", { fg = colors.bright_magenta })
+    set(0, "NeoTreeTitleBar", { fg = colors.magenta })
+    set(0, "NeoTreeNormal", { fg = colors.white })
+
+    set(0, "TelescopePromptBorder", { fg = colors.white })
+    set(0, "TelescopePromptNormal", { fg = colors.white })
+    set(0, "TelescopePromptTitle", { fg = colors.white })
+    set(0, "TelescopePromptCounter", { fg = colors.bright_blue })
+    set(0, "TelescopePromptPrefix", { fg = colors.bright_green })
+
+    set(0, "TelescopeResultsBorder", { fg = colors.bright_white })
+    set(0, "TelescopeResultsNormal", { fg = colors.bright_blue })
+    set(0, "TelescopeResultsTitle", { fg = colors.bright_cyan })
+    set(0, "TelescopeSelectionCaret", { fg = colors.bright_red })
+
+    set(0, "TelescopePreviewBorder", { fg = colors.bright_white })
+    set(0, "TelescopePreviewNormal", { fg = colors.white })
+    set(0, "TelescopePreviewTitle", { fg = colors.bright_yellow })
 end
 
 return M
