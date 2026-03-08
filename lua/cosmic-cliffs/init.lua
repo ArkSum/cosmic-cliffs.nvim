@@ -65,6 +65,7 @@ function M.setup()
     set(0, "StorageClass", { fg = colors.cyan })
     set(0, "Structure", { fg = colors.cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
+    set(0, "Attribute", { fg = colors.bright_cyan })
 
     -- GRAYS
     set(0, "Visual", { bg = colors.gray })
