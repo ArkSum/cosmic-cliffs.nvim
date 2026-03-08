@@ -62,7 +62,7 @@ function M.setup()
 
     -- GRAYS
     set(0, "Visual", { bg = colors.gray })
-    set(0, "LineNr", { bg = colors.bright_black })
+    set(0, "LineNr", { fg = colors.bright_black })
 end
 
 return M
