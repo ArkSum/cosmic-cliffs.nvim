@@ -5,4 +5,4 @@ if !has('nvim')
   finish
 endif
 
-lua require('cosmic-cliffs').setup()
+lua require("cosmic-cliffs").setup()
