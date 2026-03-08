@@ -47,7 +47,7 @@ function M.setup()
     -- YELLOWS
     set(0, "Identifier", { fg = colors.yellow })
     set(0, "StatusLine", { fg = colors.bright_yellow })
-    set(0, "Parameter", { fg = colors.bright_yellow })
+    set(0, "@lsp.type.parameter", { fg = colors.bright_yellow })
 
     -- MAGENTAS
     set(0, "Statement", { fg = colors.magenta })
@@ -61,7 +61,6 @@ function M.setup()
 
     -- CYANS
     set(0, "Function", { fg = colors.bright_cyan })
-    set(0, "@lsp.type.type", { fg = colors.gray })
     set(0, "StorageClass", { fg = colors.cyan })
     set(0, "Structure", { fg = colors.cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
