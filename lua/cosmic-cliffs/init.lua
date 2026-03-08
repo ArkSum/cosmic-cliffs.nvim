@@ -29,6 +29,10 @@ function M.setup()
 
     local set = vim.api.nvim_set_hl
 
+    for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+        vim.api.nvim_set_hl(0, group, {})
+    end
+
     -- BLACKS (DIM)
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "LineNr", { fg = colors.bright_black })
@@ -57,7 +61,7 @@ function M.setup()
 
     -- CYANS
     set(0, "Function", { fg = colors.bright_cyan })
-    set(0, "Type", { fg = colors.gray })
+    set(0, "@lsp.type.type", { fg = colors.gray })
     set(0, "StorageClass", { fg = colors.cyan })
     set(0, "Structure", { fg = colors.cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
