@@ -57,7 +57,7 @@ function M.setup()
 
     -- CYANS
     set(0, "Function", { fg = colors.bright_cyan })
-    set(0, "Type", { fg = colors.cyan })
+    set(0, "Type", { fg = colors.gray })
     set(0, "StorageClass", { fg = colors.cyan })
     set(0, "Structure", { fg = colors.cyan })
     set(0, "Typedef", { fg = colors.bright_cyan })
