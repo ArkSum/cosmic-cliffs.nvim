@@ -29,7 +29,9 @@ function M.setup()
 
     local set = vim.api.nvim_set_hl
 
-    -- These groups are in the order of the NAMING CONVENTIONS section of the syntax.txt help page
+    -- These groups are in the order of the NAMING CONVENTIONS section of the
+    -- syntax.txt help page. The exception is types, because they need to be done
+    -- after defining the special groups
     -- SYNTAX HIGHLIGHT GROUPS: Comment
     set(0, "Comment", { fg = colors.yellow })
 
@@ -50,17 +52,20 @@ function M.setup()
     -- SYNTAX HIGHLIGHT GROUPS: PreProcessor
     set(0, "PreProc", { fg = colors.magenta }) -- Top-level
 
-    -- SYNTAX HIGHLIGHT GROUPS: Types
-    set(0, "Type", { fg = colors.blue }) -- Top-level ???
-
     -- SYNTAX HIGHLIGHT GROUPS: Special
     -- This is the override that might have been giving me trouble
     set(0, "Special", { fg = colors.bright_magenta }) -- Top-level
     set(0, "SpecialChar", { fg = colors.magenta })
 
+    -- SYNTAX HIGHLIGHT GROUPS: Types
+    set(0, "Type", { fg = colors.magenta }) -- Top-level ???
+    set(0, "StorageClass", { fg = colors.blue })
+    set(0, "Structure", { fg = colors.blue })
+    set(0, "Typedef", { fg = colors.blue })
+
     -- SYNTAX HIGHLIGHT GROUPS: Misc
     set(0, "Error", { fg = colors.bright_white, bg = colors.red })
-    set(0, "Todo", { bg = colors.bright_magenta })
+    set(0, "Todo", { fg = colors.black, bg = colors.bright_magenta })
 
 
     -- SYNTAX HIGHLIGHT GROUPS: Diff
