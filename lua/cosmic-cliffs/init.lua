@@ -14,8 +14,7 @@ local colors = {
     magenta = "#b559ba",
     bright_magenta = "#e1b5e4",
     cyan = "#347ccb",
-    bright_cyan = "#ff0000",
-    -- bright_cyan = "#97b5d7",
+    bright_cyan = "#97b5d7",
     white = "#e2c0bd",
     bright_white = "#f9f9f9",
     gray = "#674c6a"
@@ -65,8 +64,6 @@ function M.setup()
     set(0, "Function", { fg = colors.bright_cyan })
     set(0, "StorageClass", { fg = colors.cyan })
     set(0, "Structure", { fg = colors.cyan })
-    set(0, "Typedef", { fg = colors.bright_cyan })
-    set(0, "Attribute", { fg = colors.bright_cyan })
 
     -- GRAYS
     set(0, "Visual", { bg = colors.gray })
