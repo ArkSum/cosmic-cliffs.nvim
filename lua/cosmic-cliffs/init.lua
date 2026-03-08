@@ -38,7 +38,7 @@ function M.setup()
     set(0, "LineNr", { fg = colors.bright_black })
 
     -- WHITES
-    set(0, "Normal", { fg = colors.bright_magenta })
+    set(0, "Normal", { fg = colors.white })
 
     -- GREENS
     set(0, "Comment", { fg = colors.green })
