@@ -64,7 +64,6 @@ function M.setup()
 
     -- GRAYS
     set(0, "Visual", { bg = colors.gray })
-    local value = true
 end
 
 return M
