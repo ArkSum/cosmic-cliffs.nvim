@@ -33,7 +33,7 @@ function M.setup()
     set(0, "CursorLine", { bg = colors.bright_black })
 
     -- WHITES
-    set(0, "Normal", { fg = colors.white })
+    -- set(0, "Normal", { fg = colors.white })
 
     -- GREENS
     set(0, "Comment", { fg = colors.green })
