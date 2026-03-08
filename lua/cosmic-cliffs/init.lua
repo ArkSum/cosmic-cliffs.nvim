@@ -73,11 +73,15 @@ function M.setup()
     set(0, "Changed", { fg = colors.bright_blue })
     set(0, "Removed", { fg = colors.bright_red })
 
+    -- HIGHLIGHT GROUPS: NeoVim
     set(0, "VertLine", { fg = colors.purple })
     set(0, "StatusLine", { fg = colors.bright_orange })
     set(0, "LineNr", { fg = colors.bright_black })
     set(0, "CursorLine", { bg = colors.bright_black })
     set(0, "Visual", { bg = colors.gray })
+
+    -- TREESITTER HIGHLIGHT GROUPS
+    set(0, "@type.cpp", { fg = colors.magenta })
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
