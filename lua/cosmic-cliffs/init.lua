@@ -31,9 +31,16 @@ function M.setup()
 
     -- TODO: Fix this
     -- Here is a comment
-    set(0, "Normal", { bg = colors.black, fg = colors.white })
-    set(0, "Comment", { fg = colors.green })
-    set(0, "CursorLine", { bg = colors.bright_black })
+    set(0, "Normal", {
+        bg = colors.black, fg = colors.white
+    })
+    set(0, "Comment", {
+        fg = colors.green
+    })
+    set(0, "CursorLine", {
+        bg = colors.bright_black
+    })
+    set(0, "Identifier", { fg = colors.yellow })
     set(0, "Keyword", { fg = colors.magenta })
     set(0, "LineNr", { fg = colors.bright_black })
     set(0, "VertLine", { fg = colors.blue })
