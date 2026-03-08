@@ -29,31 +29,40 @@ function M.setup()
 
     local set = vim.api.nvim_set_hl
 
-    set(0, "@lsp.type.variable", { fg = colors.bright_orange })
+    -- SYNTAX HIGHLIGHT GROUPS: Comment
+    set(0, "Comment", { fg = colors.yellow })
 
-    -- STANDARD HIGHLIGHT GROUPS
-    set(0, "Visual", { bg = colors.gray })
+    -- SYNTAX HIGHLIGHT GROUPS: Constants
+    set(0, "Constant", { fg = colors.purple }) -- Top-level
+    set(0, "String", { fg = colors.bright_yellow })
+    set(0, "Character", { fg = colors.bright_yellow })
+    set(0, "Number", { fg = colors.bright_purple })
+    set(0, "Boolean", { fg = colors.purple })
+
+    set(0, "Identifier", { fg = colors.orange })    -- Any variable name
+    set(0, "Function", { fg = colors.bright_blue }) -- Function name
+
+    -- SYNTAX HIGHLIGHT GROUPS: Statements
+    set(0, "Statement", { fg = colors.magenta }) -- Top-level
+    set(0, "Keyword", { fg = colors.magenta })
+
+    -- SYNTAX HIGHLIGHT GROUPS: PreProcessor
+    set(0, "PreProc", { fg = colors.magenta }) -- Top-level
+
+    set(0, "VertLine", { fg = colors.purple })
+    set(0, "StorageClass", { fg = colors.blue })
+    set(0, "Structure", { fg = colors.blue })
+    set(0, "Changed", { fg = colors.bright_blue })
+    set(0, "StatusLine", { fg = colors.bright_orange })
     set(0, "LineNr", { fg = colors.bright_black })
     set(0, "CursorLine", { bg = colors.bright_black })
-    set(0, "Identifier", { fg = colors.orange })
-    set(0, "StatusLine", { fg = colors.bright_orange })
-    set(0, "Removed", { fg = colors.bright_red })
-    set(0, "Comment", { fg = colors.yellow })
-    set(0, "String", { fg = colors.bright_yellow })
+    set(0, "Visual", { bg = colors.gray })
     set(0, "Added", { fg = colors.bright_yellow })
-    set(0, "Statement", { fg = colors.magenta })
-    set(0, "Keyword", { fg = colors.magenta })
-    set(0, "VertLine", { fg = colors.purple })
-    set(0, "Constant", { fg = colors.purple })
-    set(0, "Boolean", { fg = colors.purple })
-    set(0, "Number", { fg = colors.bright_purple })
-    set(0, "StorageClass", { fg = colors.blue })
-    set(0, "Changed", { fg = colors.bright_blue })
-    set(0, "Structure", { fg = colors.blue })
-    set(0, "Function", { fg = colors.bright_blue })
+    set(0, "Removed", { fg = colors.bright_red })
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
+    set(0, "@lsp.type.variable", { fg = colors.bright_orange })
 
     -- NOICECMDLINE HIGHLIGHT GROUPS
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.bright_magenta })
