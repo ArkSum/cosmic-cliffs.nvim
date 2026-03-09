@@ -42,7 +42,7 @@ function M.setup()
     set(0, "Constant", { fg = colors.purple }) -- Top-level
     set(0, "String", { fg = colors.light_yellow })
     set(0, "Character", { fg = colors.light_yellow })
-    set(0, "Number", { fg = colors.vibrant_magenta })
+    set(0, "Number", { fg = colors.vibrant_magenta, italic = true })
     set(0, "Float", { fg = colors.vibrant_magenta, italic = true })
     set(0, "Boolean", { fg = colors.purple })
 
