@@ -36,9 +36,7 @@ function M.setup()
 
 
     -- SYNTAX HIGHLIGHTING GROUPS
-
-    set(0, "Delimiter", { fg = colors.white })
-
+    set(0, "Normal", { fg = colors.red })
 
     set(0, "Comment", { fg = colors.yellow })
 
