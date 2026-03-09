@@ -37,7 +37,8 @@ function M.setup()
 
     -- SYNTAX HIGHLIGHTING GROUPS
 
-    set(0, "Normal", { fg = colors.white })
+    set(0, "Delimiter", { fg = colors.white })
+
 
     set(0, "Comment", { fg = colors.yellow })
 
@@ -100,9 +101,10 @@ function M.setup()
 
 
     -- PLUGINS
-    set(0, "LazyCommit", { fg = colors.red })
 
     -- LAZYVIM
+    -- Just for the expanded commit view
+    -- set(0, "LazyCommit", { fg = colors.red })
 
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
