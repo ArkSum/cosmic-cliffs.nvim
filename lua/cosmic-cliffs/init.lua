@@ -62,7 +62,7 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- Types
-    set(0, "Type", { fg = colors.light_purple }) -- Top-level, but only sort of.
+    set(0, "Type", { fg = colors.blue }) -- Top-level, but only sort of.
     -- Built-in types for some reason fall under the Treesitter @type.builtin
 
     -- Misc
