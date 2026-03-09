@@ -68,6 +68,11 @@ function M.setup()
     set(0, "Error", { fg = colors.light_white, bg = colors.red })
     set(0, "Todo", { fg = colors.light_white, bg = colors.orange })
 
+    -- Unknown type: TODO Messages
+    set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.orange })
+    set(0, "TodoSignTODO", { fg = colors.orange })
+    set(0, "TodoFgTODO", { fg = colors.light_white, bg = colors.orange })
+
     -- SYNTAX HIGHLIGHT GROUPS: Diff
     set(0, "Added", { fg = colors.light_yellow })
     set(0, "Changed", { fg = colors.light_blue })
