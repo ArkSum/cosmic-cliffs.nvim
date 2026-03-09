@@ -58,10 +58,11 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- SYNTAX HIGHLIGHT GROUPS: Types
-    set(0, "@type", { fg = colors.blue }) -- Top-level ???
+    set(0, "Type", { fg = colors.blue }) -- Top-level ???
     -- set(0, "StorageClass", { fg = colors.blue })
     -- set(0, "Structure", { fg = colors.blue })
     -- set(0, "Typedef", { fg = colors.blue })
+
 
     -- SYNTAX HIGHLIGHT GROUPS: Misc
     set(0, "Error", { fg = colors.bright_white, bg = colors.red })
@@ -80,10 +81,7 @@ function M.setup()
     set(0, "Visual", { bg = colors.gray })
 
     -- TREESITTER HIGHLIGHT GROUPS
-
-    -- FAILED ATTEMPTS
-    -- 1. This simply added the color to the normal Type specifier!
-    -- set(0, "@type.cpp", { fg = colors.magenta })
+    set(0, "@type.builtin", { fg = colors.blue }) --
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
