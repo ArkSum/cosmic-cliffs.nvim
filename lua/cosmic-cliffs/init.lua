@@ -58,7 +58,7 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- SYNTAX HIGHLIGHT GROUPS: Types
-    set(0, "Type", { fg = colors.blue }) -- Top-level ???
+    set(0, "@type", { fg = colors.blue }) -- Top-level ???
     -- set(0, "StorageClass", { fg = colors.blue })
     -- set(0, "Structure", { fg = colors.blue })
     -- set(0, "Typedef", { fg = colors.blue })
