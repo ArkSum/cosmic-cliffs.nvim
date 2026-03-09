@@ -13,6 +13,7 @@ local colors = {
     light_purple = "#c8a7e9",
     magenta = "#b559ba",
     light_magenta = "#e1b5e4",
+    vibrant_magenta = "#d43adf",
     blue = "#4354db",
     light_blue = "#939deb",
     white = "#e2c0bd",
@@ -33,74 +34,86 @@ function M.setup()
     -- syntax.txt help page. The exception is types, because they need to be done
     -- after defining the special groups
 
-    -- SYNTAX HIGHLIGHT GROUPS: Comment
+
+    -- SYNTAX HIGHLIGHTING GROUPS
+
     set(0, "Normal", { fg = colors.white })
 
-    -- SYNTAX HIGHLIGHT GROUPS: Comment
     set(0, "Comment", { fg = colors.yellow })
 
-    -- SYNTAX HIGHLIGHT GROUPS: Constants
+    -- Constants
     set(0, "Constant", { fg = colors.purple }) -- Top-level
     set(0, "String", { fg = colors.light_yellow })
     set(0, "Character", { fg = colors.light_yellow })
-    set(0, "Number", { fg = colors.light_purple })
+    set(0, "Number", { fg = colors.bright_magenta })
     set(0, "Boolean", { fg = colors.purple })
 
     set(0, "Identifier", { fg = colors.orange })   -- Any variable name
     set(0, "Function", { fg = colors.light_blue }) -- Function name
 
-    -- SYNTAX HIGHLIGHT GROUPS: Statements
+    -- Statements
     set(0, "Statement", { fg = colors.magenta }) -- Top-level
     set(0, "Keyword", { fg = colors.magenta })
 
-    -- SYNTAX HIGHLIGHT GROUPS: PreProcessor
+    -- PreProcessor
     set(0, "PreProc", { fg = colors.magenta }) -- Top-level
 
-    -- SYNTAX HIGHLIGHT GROUPS: Special
-    -- This is the override that might have been giving me trouble
+    -- Special
     set(0, "Special", { fg = colors.light_magenta }) -- Top-level
+    -- ^This^ also applies to the LazyVim main menu
     set(0, "SpecialChar", { fg = colors.magenta })
 
-    -- SYNTAX HIGHLIGHT GROUPS: Types
-    set(0, "Type", { fg = colors.blue }) -- Top-level ???
+    -- Types
+    set(0, "Type", { fg = colors.light_purple }) -- Top-level, but only sort of.
+    -- Built-in types for some reason fall under the Treesitter @type.builtin
 
-    -- SYNTAX HIGHLIGHT GROUPS: Misc
+    -- Misc
     set(0, "Error", { fg = colors.light_white, bg = colors.red })
     set(0, "Todo", { fg = colors.light_white, bg = colors.orange })
+
+    -- Diff
+    set(0, "Added", { fg = colors.light_yellow })
+    set(0, "Changed", { fg = colors.light_blue })
+    set(0, "Removed", { fg = colors.light_red })
+
 
     -- Unknown type: TODO Messages
     set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.orange })
     set(0, "TodoSignTODO", { fg = colors.orange })
 
-    -- SYNTAX HIGHLIGHT GROUPS: Diff
-    set(0, "Added", { fg = colors.light_yellow })
-    set(0, "Changed", { fg = colors.light_blue })
-    set(0, "Removed", { fg = colors.light_red })
 
     -- HIGHLIGHT GROUPS: Neovim
-    set(0, "VertLine", { fg = colors.purple })
+    set(0, "VertLine", { fg = colors.purple })    -- Doesn't seem to work
     set(0, "StatusLine", { fg = colors.light_orange })
-    set(0, "LineNr", { fg = colors.light_black })
+    set(0, "LineNr", { fg = colors.light_black }) -- Doesn't seem to work
     set(0, "CursorLine", { bg = colors.light_black })
     set(0, "Visual", { bg = colors.gray })
 
+
     -- TREESITTER HIGHLIGHT GROUPS
-    set(0, "@type.builtin", { fg = colors.blue }) -- Built-in C types don't work with Type for some reason
+    set(0, "@type.builtin", { fg = colors.blue })
+
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.light_magenta })
     set(0, "@lsp.type.variable", { fg = colors.light_orange })
 
-    -- NOICECMDLINE HIGHLIGHT GROUPS
+
+    -- PLUGINS
+    set(0, "LazyCommit", { fg = colors.red })
+
+    -- LAZYVIM
+
+    -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
     set(0, "NoiceCmdlineIconInput", { fg = colors.magenta })
 
-    -- NEOTREE HIGHLIGHT GROUPS
+    -- NEOTREE
     set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
     set(0, "NeoTreeTitleBar", { fg = colors.magenta })
     set(0, "NeoTreeNormal", { fg = colors.white })
 
-    -- TELESCOPE HIGHLIGHT GROUPS
+    -- TELESCOPE
     set(0, "TelescopePromptBorder", { fg = colors.white })
     set(0, "TelescopePromptNormal", { fg = colors.white })
     set(0, "TelescopePromptTitle", { fg = colors.white })
