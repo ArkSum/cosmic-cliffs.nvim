@@ -58,22 +58,21 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- SYNTAX HIGHLIGHT GROUPS: Types
-    set(0, "Type", { fg = colors.magenta }) -- Top-level ???
-    set(0, "StorageClass", { fg = colors.blue })
-    set(0, "Structure", { fg = colors.blue })
-    set(0, "Typedef", { fg = colors.blue })
+    set(0, "Type", { fg = colors.blue }) -- Top-level ???
+    -- set(0, "StorageClass", { fg = colors.blue })
+    -- set(0, "Structure", { fg = colors.blue })
+    -- set(0, "Typedef", { fg = colors.blue })
 
     -- SYNTAX HIGHLIGHT GROUPS: Misc
     set(0, "Error", { fg = colors.bright_white, bg = colors.red })
     set(0, "Todo", { fg = colors.black, bg = colors.bright_magenta })
-
 
     -- SYNTAX HIGHLIGHT GROUPS: Diff
     set(0, "Added", { fg = colors.bright_yellow })
     set(0, "Changed", { fg = colors.bright_blue })
     set(0, "Removed", { fg = colors.bright_red })
 
-    -- HIGHLIGHT GROUPS: NeoVim
+    -- HIGHLIGHT GROUPS: Neovim
     set(0, "VertLine", { fg = colors.purple })
     set(0, "StatusLine", { fg = colors.bright_orange })
     set(0, "LineNr", { fg = colors.bright_black })
@@ -81,7 +80,10 @@ function M.setup()
     set(0, "Visual", { bg = colors.gray })
 
     -- TREESITTER HIGHLIGHT GROUPS
-    set(0, "@type.cpp", { fg = colors.magenta })
+
+    -- FAILED ATTEMPTS
+    -- 1. This simply added the color to the normal Type specifier!
+    -- set(0, "@type.cpp", { fg = colors.magenta })
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.bright_magenta })
