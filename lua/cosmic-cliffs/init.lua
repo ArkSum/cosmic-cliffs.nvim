@@ -6,7 +6,7 @@ local colors = {
     red = "#db4343",
     light_red = "#ed8f8f",
     yellow = "#df9c5e",
-    light_yellow = "#efab94",
+    light_yellow = "#deb484",
     orange = "#d27445",
     light_orange = "#edbaa0",
     purple = "#7930c3",
@@ -14,8 +14,9 @@ local colors = {
     magenta = "#b559ba",
     light_magenta = "#e1b5e4",
     vibrant_magenta = "#d43adf",
-    blue = "#4354db",
-    light_blue = "#939deb",
+    dark_blue = "#4354db",
+    medium_blue = "#939deb",
+    light_blue = "#75a7d6",
     white = "#e2c0bd",
     light_white = "#f9f9f9",
     gray = "#674c6a"
@@ -46,8 +47,8 @@ function M.setup()
     set(0, "Float", { fg = colors.vibrant_magenta, bold = true })
     set(0, "Boolean", { fg = colors.purple })
 
-    set(0, "Identifier", { fg = colors.orange })   -- Any variable name
-    set(0, "Function", { fg = colors.light_blue }) -- Function name
+    set(0, "Identifier", { fg = colors.orange })    -- Any variable name
+    set(0, "Function", { fg = colors.medium_blue }) -- Function name
 
     -- Statements
     set(0, "Statement", { fg = colors.magenta }) -- Top-level
@@ -62,7 +63,7 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- Types
-    set(0, "Type", { fg = colors.blue }) -- Top-level, but only sort of.
+    set(0, "Type", { fg = colors.dark_blue }) -- Top-level, but only sort of.
     -- Built-in types for some reason fall under the Treesitter @type.builtin
 
     -- Misc
@@ -89,7 +90,7 @@ function M.setup()
 
 
     -- TREESITTER HIGHLIGHT GROUPS
-    set(0, "@type.builtin", { fg = colors.blue })
+    set(0, "@type.builtin", { fg = colors.dark_blue })
 
 
     -- LSP HIGHLIGHT GROUPS
@@ -121,7 +122,7 @@ function M.setup()
 
     set(0, "TelescopeResultsBorder", { fg = colors.light_white })
     set(0, "TelescopeResultsNormal", { fg = colors.light_purple })
-    set(0, "TelescopeResultsTitle", { fg = colors.light_blue })
+    set(0, "TelescopeResultsTitle", { fg = colors.medium_blue })
     set(0, "TelescopeSelectionCaret", { fg = colors.light_red })
 
     set(0, "TelescopePreviewBorder", { fg = colors.light_white })
