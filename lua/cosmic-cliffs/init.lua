@@ -6,6 +6,7 @@ local colors = {
     red = "#db4343",
     light_red = "#ed8f8f",
     yellow = "#df9c5e",
+    semi_yellow = "#df9c5e7f",
     light_yellow = "#deb484",
     orange = "#d27445",
     light_orange = "#edbaa0",
@@ -14,7 +15,7 @@ local colors = {
     magenta = "#b559ba",
     light_magenta = "#e1b5e4",
     vibrant_magenta = "#d43adf",
-    dark_blue = "#4354db",
+    dark_blue = "#7930c3",
     medium_blue = "#939deb",
     light_blue = "#75a7d6",
     white = "#e2c0bd",
@@ -37,7 +38,7 @@ function M.setup()
 
 
     -- SYNTAX HIGHLIGHTING GROUPS
-    set(0, "Comment", { fg = colors.yellow })
+    set(0, "Comment", { fg = colors.semi_yellow })
 
     -- Constants
     set(0, "Constant", { fg = colors.purple }) -- Top-level
@@ -63,7 +64,7 @@ function M.setup()
     set(0, "SpecialChar", { fg = colors.magenta })
 
     -- Types
-    set(0, "Type", { fg = colors.dark_blue }) -- Top-level, but only sort of.
+    set(0, "Type", { fg = colors.dark_blue, bold = true }) -- Top-level, but only sort of.
     -- Built-in types for some reason fall under the Treesitter @type.builtin
 
     -- Misc
@@ -90,7 +91,7 @@ function M.setup()
 
 
     -- TREESITTER HIGHLIGHT GROUPS
-    set(0, "@type.builtin", { fg = colors.dark_blue })
+    set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
 
 
     -- LSP HIGHLIGHT GROUPS
