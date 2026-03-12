@@ -79,6 +79,7 @@ function M.setup()
 
     -- Unknown type: TODO Messages
     set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.orange })
+    set(0, "TodoFgTODO", { fg = colors.orange })
     set(0, "TodoSignTODO", { fg = colors.orange })
 
 
