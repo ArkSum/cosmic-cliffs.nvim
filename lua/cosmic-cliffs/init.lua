@@ -108,7 +108,7 @@ function M.setup()
 
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
-    set(0, "NoiceCmdlineIconInput", { fg = colors.magenta })
+    set(0, "NoiceCmdlineIcon", { fg = colors.magenta })
 
     -- NEOTREE
     set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
