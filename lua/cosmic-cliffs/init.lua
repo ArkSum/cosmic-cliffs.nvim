@@ -83,6 +83,7 @@ function M.setup()
     set(0, "TodoSignTODO", { fg = colors.yellow })
     set(0, "Directory", { fg = colors.gray })
     set(0, "DiagnosticInfo", { fg = colors.light_purple })
+    set(0, "DiagnosticInfo", { fg = colors.light_purple })
 
 
     -- HIGHLIGHT GROUPS: Neovim
@@ -95,6 +96,7 @@ function M.setup()
 
     -- TREESITTER HIGHLIGHT GROUPS
     set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
+    set(0, "@variable", { fg = colors.light_blue, bold = true })
 
 
     -- LSP HIGHLIGHT GROUPS
@@ -107,6 +109,9 @@ function M.setup()
     -- LAZYVIM
     -- Just for the expanded commit view
     -- set(0, "LazyCommit", { fg = colors.red })
+
+    -- TELESCOPE
+    set(0, "TelescopeNormal", { fg = colors.white })
 
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
