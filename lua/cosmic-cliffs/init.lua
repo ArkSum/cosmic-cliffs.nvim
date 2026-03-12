@@ -111,7 +111,7 @@ function M.setup()
     -- set(0, "LazyCommit", { fg = colors.red })
 
     -- TELESCOPE
-    set(0, "TelescopeNormal", { fg = colors.white })
+    set(0, "TelescopeNormal", { fg = colors.red })
 
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
