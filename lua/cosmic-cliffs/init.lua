@@ -49,7 +49,7 @@ function M.setup()
     set(0, "Boolean", { fg = colors.purple })
 
     set(0, "Identifier", { fg = colors.light_blue }) -- Any variable name
-    set(0, "Function", { fg = colors.medium_blue })  -- Function name
+    set(0, "Function", { fg = colors.orange })       -- Function name
 
     -- Statements
     set(0, "Statement", { fg = colors.magenta }) -- Top-level
