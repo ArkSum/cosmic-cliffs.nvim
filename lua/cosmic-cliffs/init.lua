@@ -1,8 +1,8 @@
 local M = {}
 
 local colors = {
-    black = "#18091b",
-    light_black = "#3d2b40",
+    black = "#0e091b",
+    light_black = "#3a2e5b",
     red = "#db4343",
     light_red = "#ed8f8f",
     yellow = "#df9c5e",
@@ -78,9 +78,9 @@ function M.setup()
 
 
     -- Unknown type: TODO Messages
-    set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.orange })
-    set(0, "TodoFgTODO", { fg = colors.orange })
-    set(0, "TodoSignTODO", { fg = colors.orange })
+    set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.yellow })
+    set(0, "TodoFgTODO", { fg = colors.yellow })
+    set(0, "TodoSignTODO", { fg = colors.yellow })
 
 
     -- HIGHLIGHT GROUPS: Neovim
