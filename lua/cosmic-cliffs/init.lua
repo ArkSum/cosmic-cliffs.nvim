@@ -48,8 +48,8 @@ function M.setup()
     set(0, "Float", { fg = colors.vibrant_magenta, bold = true })
     set(0, "Boolean", { fg = colors.purple })
 
-    set(0, "Identifier", { fg = colors.orange })    -- Any variable name
-    set(0, "Function", { fg = colors.medium_blue }) -- Function name
+    set(0, "Identifier", { fg = colors.light_blue }) -- Any variable name
+    set(0, "Function", { fg = colors.medium_blue })  -- Function name
 
     -- Statements
     set(0, "Statement", { fg = colors.magenta }) -- Top-level
@@ -95,8 +95,8 @@ function M.setup()
 
 
     -- LSP HIGHLIGHT GROUPS
-    set(0, "@lsp.type.parameter", { fg = colors.light_magenta })
-    set(0, "@lsp.type.variable", { fg = colors.light_orange })
+    set(0, "@lsp.type.parameter", { fg = colors.light_orange })
+    set(0, "@lsp.type.variable", { fg = colors.light_magenta })
 
 
     -- PLUGINS
