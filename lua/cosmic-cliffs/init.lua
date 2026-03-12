@@ -116,9 +116,9 @@ function M.setup()
     set(0, "NeoTreeNormal", { fg = colors.white })
 
     -- TELESCOPE
-    set(0, "TelescopePromptBorder", { fg = colors.white })
-    set(0, "TelescopePromptNormal", { fg = colors.white })
-    set(0, "TelescopePromptTitle", { fg = colors.white })
+    set(0, "TelescopePromptBorder", { fg = colors.red })
+    set(0, "TelescopePromptNormal", { fg = colors.red })
+    set(0, "TelescopePromptTitle", { fg = colors.red })
     set(0, "TelescopePromptCounter", { fg = colors.light_purple })
     set(0, "TelescopePromptPrefix", { fg = colors.light_yellow })
 
