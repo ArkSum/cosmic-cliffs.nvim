@@ -6,6 +6,7 @@ local colors = {
     red = "#db4343",
     light_red = "#ed8f8f",
     yellow = "#df9c5e",
+    semi_yellow = "786049",
     light_yellow = "#deb484",
     orange = "#d27445",
     light_orange = "#edbaa0",
