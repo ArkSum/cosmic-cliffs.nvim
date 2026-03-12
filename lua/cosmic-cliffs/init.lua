@@ -109,27 +109,12 @@ function M.setup()
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
     set(0, "NoiceCmdlineIcon", { fg = colors.magenta })
+    set(0, "NoiceCmdline", { fg = colors.red })
 
     -- NEOTREE
     set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
     set(0, "NeoTreeTitleBar", { fg = colors.magenta })
     set(0, "NeoTreeNormal", { fg = colors.white })
-
-    -- TELESCOPE
-    set(0, "TelescopePromptBorder", { fg = colors.red })
-    set(0, "TelescopePromptNormal", { fg = colors.red })
-    set(0, "TelescopePromptTitle", { fg = colors.red })
-    set(0, "TelescopePromptCounter", { fg = colors.light_purple })
-    set(0, "TelescopePromptPrefix", { fg = colors.light_yellow })
-
-    set(0, "TelescopeResultsBorder", { fg = colors.light_white })
-    set(0, "TelescopeResultsNormal", { fg = colors.light_purple })
-    set(0, "TelescopeResultsTitle", { fg = colors.medium_blue })
-    set(0, "TelescopeSelectionCaret", { fg = colors.light_red })
-
-    set(0, "TelescopePreviewBorder", { fg = colors.light_white })
-    set(0, "TelescopePreviewNormal", { fg = colors.white })
-    set(0, "TelescopePreviewTitle", { fg = colors.light_orange })
 end
 
 return M
