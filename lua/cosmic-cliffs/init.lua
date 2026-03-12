@@ -77,10 +77,12 @@ function M.setup()
     set(0, "Removed", { fg = colors.light_red })
 
 
-    -- Unknown type: TODO Messages
+    -- Unknown types
     set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.yellow })
     set(0, "TodoFgTODO", { fg = colors.yellow })
     set(0, "TodoSignTODO", { fg = colors.yellow })
+    set(0, "Directory", { fg = colors.gray })
+    set(0, "DiagnosticInfo", { fg = colors.light_purple })
 
 
     -- HIGHLIGHT GROUPS: Neovim
