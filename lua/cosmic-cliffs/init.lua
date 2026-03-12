@@ -112,6 +112,7 @@ function M.setup()
 
     -- TELESCOPE
     set(0, "TelescopeNormal", { fg = colors.red })
+    set(0, "TelescopePromptBorder", { fg = colors.red })
 
     -- NOICECMDLINE
     set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
