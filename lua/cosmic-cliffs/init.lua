@@ -17,7 +17,7 @@ local colors = {
     vibrant_magenta = "#d43adf",
     dark_blue = "#456aff",
     medium_blue = "#939deb",
-    light_blue = "#75a7d6",
+    light_blue = "#8ea7ff",
     white = "#e2c0bd",
     light_white = "#f9f9f9",
     gray = "#674c6a"
@@ -96,7 +96,7 @@ function M.setup()
 
     -- LSP HIGHLIGHT GROUPS
     set(0, "@lsp.type.parameter", { fg = colors.light_orange })
-    set(0, "@lsp.type.variable", { fg = colors.light_magenta })
+    set(0, "@lsp.type.variable", { fg = colors.light_blue })
 
 
     -- PLUGINS
