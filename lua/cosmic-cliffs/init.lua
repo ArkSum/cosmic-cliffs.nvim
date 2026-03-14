@@ -2,25 +2,31 @@ local M = {}
 
 local colors = {
     black = "#0e091b",
-    light_black = "#3a2e5b",
+    gray_1 = "#160f2a",
+    gray_2 = "#3a2e5c",
+    gray_3 = "#5f5185",
+    gray_4 = "#81779c",
+    gray_5 = "#ada6bf",
+    gray_6 = "#d6d3df",
     red = "#db4343",
     light_red = "#ed8f8f",
     yellow = "#df9c5e",
     semi_yellow = "#786049",
     light_yellow = "#deb484",
+    burnt_orange = "#c06054",
     orange = "#d27445",
     light_orange = "#edbaa0",
+    vibrant_orange = "#f27e44",
     purple = "#7930c3",
-    light_purple = "#c8a7e9",
+    light_purple = "#b484e4",
     magenta = "#b559ba",
     light_magenta = "#e1b5e4",
     vibrant_magenta = "#d43adf",
     dark_blue = "#456aff",
-    medium_blue = "#939deb",
     light_blue = "#8ea7ff",
+    icy_blue = "#c7d8e9",
     white = "#e2c0bd",
     light_white = "#f9f9f9",
-    gray = "#674c6a"
 }
 
 function M.setup()
