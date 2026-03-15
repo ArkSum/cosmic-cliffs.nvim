@@ -87,7 +87,7 @@ function M.setup()
     set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.yellow })
     set(0, "TodoFgTODO", { fg = colors.yellow })
     set(0, "TodoSignTODO", { fg = colors.yellow })
-    set(0, "Directory", { fg = colors.gray })
+    set(0, "Directory", { fg = colors.gray_2 })
     set(0, "DiagnosticInfo", { fg = colors.light_purple })
     set(0, "DiagnosticInfo", { fg = colors.light_purple })
 
@@ -99,7 +99,7 @@ function M.setup()
     set(0, "LineNrAbove", { fg = colors.light_black }) -- Doesn't seem to work
     set(0, "LineNrBelow", { fg = colors.light_black }) -- Doesn't seem to work
     set(0, "CursorLine", { bg = colors.light_black })
-    set(0, "Visual", { bg = colors.gray })
+    set(0, "Visual", { bg = colors.gray_2 })
 
 
     -- TREESITTER HIGHLIGHT GROUPS
