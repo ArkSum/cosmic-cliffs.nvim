@@ -50,12 +50,12 @@ function M.setup()
     set(0, "Constant", { fg = colors.purple }) -- Top-level
     set(0, "String", { fg = colors.light_yellow })
     set(0, "Character", { fg = colors.light_yellow })
-    set(0, "Number", { fg = colors.vibrant_magenta, bold = true })
-    set(0, "Float", { fg = colors.vibrant_magenta, bold = true })
+    set(0, "Number", { fg = colors.icy_blue, bold = true })
+    set(0, "Float", { fg = colors.icy_blue, bold = true })
     set(0, "Boolean", { fg = colors.purple })
 
-    set(0, "Identifier", { fg = colors.light_blue }) -- Any variable name
-    set(0, "Function", { fg = colors.orange })       -- Function name
+    set(0, "Identifier", { fg = colors.light_blue })   -- Any variable name
+    set(0, "Function", { fg = colors.vibrant_orange }) -- Function name
 
     -- Statements
     set(0, "Statement", { fg = colors.magenta }) -- Top-level
