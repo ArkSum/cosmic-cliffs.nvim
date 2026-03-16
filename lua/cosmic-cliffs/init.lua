@@ -42,6 +42,7 @@ function M.setup()
 	-- syntax.txt help page. The exception is types, because they need to be done
 	-- after defining the special groups
 	set(0, "Normal", { bg = colors.black, fg = "none" })
+	set(0, "NormalNC", { bg = colors.black, fg = "none" })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
