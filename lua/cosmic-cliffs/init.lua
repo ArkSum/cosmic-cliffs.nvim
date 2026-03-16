@@ -41,7 +41,7 @@ function M.setup()
 	-- These groups are in the order of the NAMING CONVENTIONS section of the
 	-- syntax.txt help page. The exception is types, because they need to be done
 	-- after defining the special groups
-	set(0, "Normal", { bg = colors.black })
+	set(0, "Normal", { bg = colors.black, fg = none })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
@@ -114,8 +114,8 @@ function M.setup()
 	-- set(0, "LazyCommit", { fg = colors.red })
 
 	-- TELESCOPE
-	set(0, "TelescopeNormal", { fg = colors.red })
-	set(0, "TelescopePromptBorder", { fg = colors.red })
+	set(0, "TelescopeNormal", { fg = colors.white })
+	set(0, "TelescopePromptBorder", { fg = colors.white })
 
 	-- NOICECMDLINE
 	set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
