@@ -42,7 +42,7 @@ function M.setup()
 	-- syntax.txt help page. The exception is types, because they need to be done
 	-- after defining the special groups
 	set(0, "Normal", { bg = colors.black, fg = "none" })
-	set(0, "NormalNC", { bg = colors.black, fg = "none" })
+	set(0, "NormalNC", { bg = colors.black, fg = "none" }) -- What the heck is "NC"?
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
@@ -54,6 +54,8 @@ function M.setup()
 	set(0, "Number", { fg = colors.icy_blue, bold = true })
 	set(0, "Float", { fg = colors.icy_blue, bold = true })
 	set(0, "Boolean", { fg = colors.purple })
+
+	set(0, "Underlined", { fg = colors.white })
 
 	set(0, "Identifier", { fg = colors.light_blue }) -- Any variable name
 	set(0, "Function", { fg = colors.vibrant_orange }) -- Function name
@@ -99,6 +101,12 @@ function M.setup()
 	set(0, "LineNrBelow", { fg = colors.light_black }) -- Doesn't seem to work
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
+	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
+	set(0, "Search", { fg = colors.black, bg = colors.light_yellow })
+	set(0, "CursorLine", { bg = colors.gray_2 })
+	set(0, "Conceal", { fg = colors.gray_1 })
+	set(0, "NonText", { fg = colors.gray_1 })
+	set(0, "WinBar", { bg = colors.red, fg = colors.light_white })
 
 	-- TREESITTER HIGHLIGHT GROUPS
 	set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
