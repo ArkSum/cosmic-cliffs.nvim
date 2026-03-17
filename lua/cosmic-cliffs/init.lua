@@ -35,6 +35,7 @@ function M.setup()
 
 	vim.o.background = "dark"
 	vim.g.colors_name = "cosmic-cliffs"
+	vim.opt.termguicolors = true
 
 	local set = vim.api.nvim_set_hl
 
