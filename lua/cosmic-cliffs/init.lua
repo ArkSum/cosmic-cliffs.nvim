@@ -96,9 +96,9 @@ function M.setup()
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
 	set(0, "StatusLine", { fg = colors.light_orange })
-	set(0, "LineNrAbove", { fg = colors.light_black, bg = colors.white }) -- Doesn't seem to work
-	set(0, "LineNr", { fg = colors.purple, bg = colors.white }) -- Doesn't seem to work
-	set(0, "LineNrBelow", { fg = colors.light_black, bg = colors.white }) -- Doesn't seem to work
+	set(0, "LineNrAbove", { fg = colors.light_black })
+	set(0, "CursorLineNr", { fg = colors.light_black })
+	set(0, "LineNrBelow", { fg = colors.light_black })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
