@@ -105,6 +105,10 @@ function M.setup()
 	set(0, "Conceal", { fg = colors.gray_4 })
 	set(0, "NonText", { fg = colors.gray_4 })
 	set(0, "WinBar", { bg = colors.red, fg = colors.light_white })
+	-- Do line numbers need to be at the very end???
+	set(0, "LineNrAbove", { fg = colors.gray_3 })
+	set(0, "CursorLineNr", { fg = colors.gray_4 })
+	set(0, "LineNrBelow", { fg = colors.gray_3 })
 
 	-- TREESITTER HIGHLIGHT GROUPS
 	set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
@@ -133,11 +137,6 @@ function M.setup()
 	set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
 	set(0, "NeoTreeTitleBar", { fg = colors.magenta })
 	set(0, "NeoTreeNormal", { fg = colors.white })
-
-	-- Do line numbers need to be at the very end???
-	set(0, "LineNrAbove", { fg = colors.gray_3 })
-	set(0, "CursorLineNr", { fg = colors.gray_4 })
-	set(0, "LineNrBelow", { fg = colors.gray_3 })
 end
 
 return M
