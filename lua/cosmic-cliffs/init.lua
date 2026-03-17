@@ -35,6 +35,7 @@ function M.setup()
 
 	vim.o.background = "dark"
 	vim.g.colors_name = "cosmic-cliffs"
+	vim.g.terminal_color_0 = colors.white
 	vim.opt.termguicolors = true
 
 	local set = vim.api.nvim_set_hl
@@ -105,7 +106,6 @@ function M.setup()
 	set(0, "Conceal", { fg = colors.gray_4 })
 	set(0, "NonText", { fg = colors.gray_4 })
 	set(0, "WinBar", { bg = colors.red, fg = colors.light_white })
-	-- Do line numbers need to be at the very end???
 	set(0, "LineNrAbove", { fg = colors.gray_3 })
 	set(0, "CursorLineNr", { fg = colors.gray_4 })
 	set(0, "LineNrBelow", { fg = colors.gray_3 })
