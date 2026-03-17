@@ -45,6 +45,7 @@ function M.setup()
 	-- after defining the special groups
 	set(0, "Normal", { bg = colors.black, fg = "none" })
 	set(0, "NormalNC", { bg = colors.black, fg = "none" }) -- What the heck is "NC"?
+	set(0, "Cusror", { bg = colors.white, fg = colors.black })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
