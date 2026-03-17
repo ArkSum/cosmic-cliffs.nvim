@@ -135,9 +135,9 @@ function M.setup()
 	set(0, "NeoTreeNormal", { fg = colors.white })
 
 	-- Do line numbers need to be at the very end???
-	set(0, "LineNrAbove", { fg = colors.light_black })
-	set(0, "CursorLineNr", { fg = colors.light_black })
-	set(0, "LineNrBelow", { fg = colors.light_black })
+	set(0, "LineNrAbove", { fg = colors.gray_2 })
+	set(0, "CursorLineNr", { fg = colors.gray_2 })
+	set(0, "LineNrBelow", { fg = colors.gray_2 })
 end
 
 return M
