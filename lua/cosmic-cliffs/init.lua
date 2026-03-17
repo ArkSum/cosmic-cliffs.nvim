@@ -96,9 +96,6 @@ function M.setup()
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
 	set(0, "StatusLine", { fg = colors.light_orange })
-	set(0, "LineNrAbove", { fg = colors.light_black })
-	set(0, "CursorLineNr", { fg = colors.light_black })
-	set(0, "LineNrBelow", { fg = colors.light_black })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
@@ -135,6 +132,11 @@ function M.setup()
 	set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
 	set(0, "NeoTreeTitleBar", { fg = colors.magenta })
 	set(0, "NeoTreeNormal", { fg = colors.white })
+
+	-- Do line numbers need to be at the very end???
+	set(0, "LineNrAbove", { fg = colors.light_black })
+	set(0, "CursorLineNr", { fg = colors.light_black })
+	set(0, "LineNrBelow", { fg = colors.light_black })
 end
 
 return M
