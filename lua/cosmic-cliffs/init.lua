@@ -100,6 +100,11 @@ function M.setup()
 	set(0, "DiagnosticOk", { fg = colors.light_white })
 	set(0, "DiagnosticWarn", { fg = colors.light_orange })
 	set(0, "DiagnosticError", { fg = colors.light_red })
+	set(0, "DiagnosticUnderlineInfo", { fg = colors.light_purple })
+	set(0, "DiagnosticUnderlineHint", { fg = colors.icy_blue })
+	set(0, "DiagnosticUnderlineOk", { fg = colors.light_white })
+	set(0, "DiagnosticUnderlineWarn", { fg = colors.light_orange })
+	set(0, "DiagnosticUnderlineError", { fg = colors.light_red })
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
