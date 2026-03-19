@@ -43,8 +43,10 @@ function M.setup()
 	-- These groups are in the order of the NAMING CONVENTIONS section of the
 	-- syntax.txt help page. The exception is types, because they need to be done
 	-- after defining the special groups
+	-- What do some of the abbreviations and terms mean?
+	-- NC: Non-current
 	set(0, "Normal", { bg = colors.black, fg = "none" })
-	set(0, "NormalNC", { bg = colors.black, fg = "none" }) -- What the heck is "NC"?
+	set(0, "NormalNC", { bg = colors.black, fg = "none" })
 	set(0, "Cursor", { bg = colors.white, fg = colors.black })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
@@ -99,7 +101,15 @@ function M.setup()
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
 	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.black })
-	set(0, "StatusLineNC", { fg = colors.gray_5, bg = colors.red })
+	set(0, "User1", { fg = colors.light_white, bg = colors.red })
+	set(0, "User2", { fg = colors.red, bg = colors.light_white })
+	set(0, "User3", { fg = colors.light_white, bg = colors.red })
+	set(0, "User4", { fg = colors.red, bg = colors.light_white })
+	set(0, "User5", { fg = colors.light_white, bg = colors.red })
+	set(0, "User6", { fg = colors.red, bg = colors.light_white })
+	set(0, "User7", { fg = colors.light_white, bg = colors.red })
+	set(0, "User8", { fg = colors.red, bg = colors.light_white })
+	set(0, "User9", { fg = colors.red, bg = colors.light_white })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
