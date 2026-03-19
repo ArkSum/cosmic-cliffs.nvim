@@ -94,7 +94,6 @@ function M.setup()
 	set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.yellow })
 	set(0, "TodoFgTODO", { fg = colors.yellow })
 	set(0, "TodoSignTODO", { fg = colors.yellow })
-	set(0, "Directory", { fg = colors.gray_2 })
 	set(0, "DiagnosticInfo", { fg = colors.light_purple })
 	set(0, "DiagnosticHint", { fg = colors.icy_blue })
 	set(0, "DiagnosticOk", { fg = colors.light_white })
@@ -153,6 +152,7 @@ function M.setup()
 	set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
 	set(0, "NeoTreeTitleBar", { fg = colors.magenta })
 	set(0, "NeoTreeNormal", { fg = colors.white })
+	set(0, "Directory", { fg = colors.gray_6 })
 end
 
 return M
