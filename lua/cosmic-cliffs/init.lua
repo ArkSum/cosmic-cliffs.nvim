@@ -48,6 +48,16 @@ function M.setup()
 	set(0, "Normal", { bg = colors.black, fg = "none" })
 	set(0, "NormalNC", { bg = colors.black, fg = "none" })
 	set(0, "Cursor", { bg = colors.white, fg = colors.black })
+	-- NOTE: TRYING TO SET THIS NORMAL MODE INDICATOR COLOR IN THE STATUS LINE
+	set(0, "StatusLineNC", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "Folded", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "Title", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "DiffChange", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "Pmenu", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "ColorColumn", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "CursorColumn", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "WinBar", { bg = colors.light_magenta, fg = colors.magenta })
+	set(0, "WinBarNC", { bg = colors.light_magenta, fg = colors.magenta })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
@@ -74,7 +84,6 @@ function M.setup()
 
 	-- Special
 	set(0, "Special", { fg = colors.light_magenta }) -- Top-level
-	set(0, "LineNr", { bg = colors.light_magenta, fg = colors.magenta })
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.magenta })
 
