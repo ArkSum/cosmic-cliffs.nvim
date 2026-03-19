@@ -100,10 +100,12 @@ function M.setup()
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
-	-- PMENU = POP-UP MENU PMENUSEL_BG = STATUSLINE_NORMAL_BG
+	-- PMENU = POP-UP MENU
 	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.white })
+	-- PMENUSEL_BG = STATUSLINE_NORMAL_BG
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
-	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.black })
+	-- STATUSLINE = Line of text at the bottom of the interface
+	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.gray_1 })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
