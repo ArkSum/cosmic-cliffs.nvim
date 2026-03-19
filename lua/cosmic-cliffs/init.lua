@@ -43,8 +43,8 @@ function M.setup()
 	-- after defining the special groups
 	-- What do some of the abbreviations and terms mean?
 	-- NC: Non-current
-	-- set(0, "Normal", { bg = colors.black, fg = "none" })
-	-- set(0, "NormalNC", { bg = colors.black, fg = "none" })
+	set(0, "Normal", { bg = colors.black, fg = "none" })
+	set(0, "NormalNC", { bg = colors.black, fg = "none" })
 	set(0, "Cursor", { bg = colors.white, fg = colors.black })
 	set(0, "Folded", { fg = colors.light_white })
 	set(0, "Title", { fg = colors.orange })
