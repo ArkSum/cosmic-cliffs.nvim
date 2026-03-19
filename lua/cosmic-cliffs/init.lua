@@ -35,8 +35,6 @@ function M.setup()
 
 	vim.o.background = "dark"
 	vim.g.colors_name = "cosmic-cliffs"
-	vim.g.terminal_color_0 = colors.white
-	vim.opt.termguicolors = true
 
 	local set = vim.api.nvim_set_hl
 
@@ -48,12 +46,8 @@ function M.setup()
 	set(0, "Normal", { bg = colors.black, fg = "none" })
 	set(0, "NormalNC", { bg = colors.black, fg = "none" })
 	set(0, "Cursor", { bg = colors.white, fg = colors.black })
-	-- NOTE: TRYING TO SET THIS NORMAL MODE INDICATOR COLOR IN THE STATUS LINE
 	set(0, "Folded", { fg = colors.light_white })
 	set(0, "Title", { fg = colors.orange })
-	set(0, "DiffChange", { bg = colors.light_magenta, fg = colors.magenta })
-	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.white })
-	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.semi_yellow })
@@ -106,6 +100,9 @@ function M.setup()
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
+	-- PMENU = POP-UP MENU PMENUSEL_BG = STATUSLINE_NORMAL_BG
+	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.white })
+	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.black })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
