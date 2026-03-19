@@ -100,7 +100,6 @@ function M.setup()
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
-	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.black })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
@@ -112,6 +111,11 @@ function M.setup()
 	set(0, "LineNrAbove", { fg = colors.gray_3 })
 	set(0, "CursorLineNr", { fg = colors.gray_4 })
 	set(0, "LineNrBelow", { fg = colors.gray_3 })
+
+	-- LUALINE Status Line
+	set(0, "lualine_a_normal", { fg = colors.red, bg = colors.yellow })
+	set(0, "lualine_b_normal", { fg = colors.red, bg = colors.yellow })
+	set(0, "lualine_c_normal", { fg = colors.red, bg = colors.yellow })
 
 	-- TREESITTER HIGHLIGHT GROUPS
 	set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
