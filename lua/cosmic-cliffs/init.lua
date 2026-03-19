@@ -74,6 +74,7 @@ function M.setup()
 
 	-- Special
 	set(0, "Special", { fg = colors.light_magenta }) -- Top-level
+	set(0, "SpecialKey", { bg = colors.light_magenta, fg = colors.magenta })
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.magenta })
 
