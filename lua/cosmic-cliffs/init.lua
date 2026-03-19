@@ -96,7 +96,10 @@ function M.setup()
 	set(0, "TodoSignTODO", { fg = colors.yellow })
 	set(0, "Directory", { fg = colors.gray_2 })
 	set(0, "DiagnosticInfo", { fg = colors.light_purple })
-	set(0, "DiagnosticInfo", { fg = colors.light_purple })
+	set(0, "DiagnosticHint", { fg = colors.icy_blue })
+	set(0, "DiagnosticOk", { fg = colors.light_white })
+	set(0, "DiagnosticWarn", { fg = colors.light_orange })
+	set(0, "DiagnosticError", { fg = colors.light_red })
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
