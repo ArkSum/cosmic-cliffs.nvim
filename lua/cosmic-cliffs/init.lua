@@ -113,6 +113,7 @@ function M.setup()
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	-- STATUSLINE = Line of text at the bottom of the interface
 	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.gray_1 })
+	set(0, "lualine_a_normal", { fg = colors.gray_2, bg = colors.gray_1 })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
