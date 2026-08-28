@@ -112,8 +112,13 @@ function M.setup()
 	-- PMENUSEL_BG = STATUSLINE_NORMAL_BG
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	-- STATUSLINE = Line of text at the bottom of the interface
-	set(0, "StatusLine", { fg = colors.light_orange, bg = colors.gray_1 })
-	set(0, "lualine_a_normal", { fg = colors.white, bg = colors.gray_1 })
+  -- Uses the lualine plugin, so those are the highlight groups used
+	set(0, "lualine_a_normal", { bg = colors.red, fg = colors.light_white })
+	set(0, "lualine_b_normal", { bg = colors.orange, fg = colors.light_white })
+	set(0, "lualine_c_normal", { bg = colors.yellow, fg = colors.light_white })
+	set(0, "lualine_x_normal", { bg = colors.magenta, fg = colors.light_white })
+	set(0, "lualine_y_normal", { bg = colors.purple, fg = colors.light_white })
+	set(0, "lualine_z_normal", { bg = colors.blue, fg = colors.light_white })
 	set(0, "CursorLine", { bg = colors.light_black })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
