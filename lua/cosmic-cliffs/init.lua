@@ -2,31 +2,63 @@ local M = {}
 
 local colors = {
 	black = "#0e091b",
-	gray_1 = "#160f2a",
-	gray_2 = "#3a2e5c",
-	gray_3 = "#5f5185",
-	gray_4 = "#81779c",
-	gray_5 = "#ada6bf",
+	gray_1 = "#1c1431",
+	gray_2 = "#31264d",
+	gray_3 = "#4c3f70",
+	gray_4 = "#6f6098",
+	gray_5 = "#9f97b8",
 	gray_6 = "#d6d3df",
-	red = "#db4343",
-	light_red = "#ed8f8f",
-	yellow = "#df9c5e",
-	semi_yellow = "#786049",
-	light_yellow = "#deb484",
-	burnt_orange = "#c06054",
-	orange = "#d27445",
-	light_orange = "#edbaa0",
-	vibrant_orange = "#f27e44",
-	purple = "#7930c3",
-	light_purple = "#b484e4",
-	magenta = "#b559ba",
-	light_magenta = "#e1b5e4",
-	vibrant_magenta = "#d43adf",
-	dark_blue = "#456aff",
-	light_blue = "#8ea7ff",
-	icy_blue = "#c7d8e9",
-	white = "#e2c0bd",
-	light_white = "#f9f9f9",
+
+  normal = "#ecdbd4",
+  comment = "#6f6098",
+  numeric = "#90e4e4",
+  string = "#daa76e",
+  keyword = "#c06054",
+  const = "#8e4ad2",
+  func = "#edbaa0",
+  modules = "#3183ff",
+  variables = "#7ab4ff",
+  parameter = "#c4a2e6",
+
+  git_mod = "#daa76e",
+  git_unt = "#5fd4d4",
+	git_cfl = "#db4343",
+  git_del = "#ed8f8f",
+  git_ign = "#6f6098",
+
+  gut_del = "#ed8f8f",
+  gut_add = "#7ab4ff",
+  gut_mod = "#daa76e",
+
+  ok = "#90e4e4",
+  hint = "#3183ff",
+  info = "#c4a2e6",
+  warn = "#edbaa0",
+  error = "#db4343",
+
+  bracket1 = "#ffe2d7",
+  bracket2 = "#eac0b9",
+  bracket3 = "#d59e9b",
+  bracket4 = "#bf7c7e",
+  bracket5 = "#aa5a60",
+  bracket6 = "#953842",
+
+  ansiBlack = "#1c1431",
+  ansiRed = "#db4343",
+  ansiGreen = "#df9c5e",
+  ansiYellow = "#d27445",
+  ansiBlue = "#8e4ad2",
+  ansiMagenta = "#d43adf",
+  ansiCyan = "#3183ff",
+  ansiWhite = "#d6d3df",
+  ansiBrightBlack = "#31264d",
+  ansiBrightRed = "#ed8f8f",
+  ansiBrightGreen = "#daa76e",
+  ansiBrightYellow = "#edbaa0",
+  ansiBrightBlue = "#c4a2e6",
+  ansiBrightMagenta = "#e1b5e4",
+  ansiBrightCyan = "#7ab4ff",
+  ansiBrightWhite = "#ffffff"
 }
 
 function M.setup()
@@ -43,67 +75,69 @@ function M.setup()
 	-- after defining the special groups
 	-- What do some of the abbreviations and terms mean?
 	-- NC: Non-current
-	set(0, "Normal", { bg = colors.black, fg = "none" })
-	set(0, "NormalNC", { bg = colors.black, fg = "none" })
-	set(0, "Cursor", { bg = colors.white, fg = colors.black })
-	set(0, "Folded", { fg = colors.light_white })
+	set(0, "Normal", { fg = colors.normal })
+	set(0, "NormalNC", { fg = colors.normal })
+	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.black })
+	set(0, "Folded", { fg = colors.normal })
 	set(0, "Title", { fg = colors.orange })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
-	set(0, "Comment", { fg = colors.semi_yellow })
+	set(0, "Comment", { fg = colors.comment })
 
 	-- Constants
-	set(0, "Constant", { fg = colors.purple }) -- Top-level
-	set(0, "String", { fg = colors.light_yellow })
-	set(0, "Character", { fg = colors.light_yellow })
-	set(0, "Number", { fg = colors.icy_blue, bold = true })
-	set(0, "Float", { fg = colors.icy_blue, bold = true })
-	set(0, "Boolean", { fg = colors.purple })
+	set(0, "Constant", { fg = colors.const }) -- Top-level
+	set(0, "String", { fg = colors.string })
+	set(0, "Character", { fg = colors.string })
+	set(0, "Number", { fg = colors.numeric, bold = true })
+	set(0, "Float", { fg = colors.numeric, bold = true })
+	set(0, "Boolean", { fg = colors.const, bold = true })
 
-	set(0, "Underlined", { fg = colors.white })
+	set(0, "Underlined", { fg = colors.ansiWhite })
 
-	set(0, "Identifier", { fg = colors.light_blue }) -- Any variable name
-	set(0, "Function", { fg = colors.vibrant_orange }) -- Function name
+	set(0, "Identifier", { fg = colors.variables }) -- Any variable name
+	set(0, "Function", { fg = colors.func }) -- Function name
 
 	-- Statements
-	set(0, "Statement", { fg = colors.magenta }) -- Top-level
-	set(0, "Keyword", { fg = colors.magenta })
+	set(0, "Statement", { fg = colors.keyword }) -- Top-level
+	set(0, "Keyword", { fg = colors.keyword })
 
 	-- PreProcessor
-	set(0, "PreProc", { fg = colors.magenta }) -- Top-level
+	set(0, "PreProc", { fg = colors.keyword }) -- Top-level
 
 	-- Special
-	set(0, "Special", { fg = colors.light_magenta }) -- Top-level
+	set(0, "Special", { fg = colors.const }) -- Top-level
 	-- ^This^ also applies to the LazyVim main menu
-	set(0, "SpecialChar", { fg = colors.magenta })
+	set(0, "SpecialChar", { fg = colors.const })
 
 	-- Types
-	set(0, "Type", { fg = colors.dark_blue, bold = true }) -- Top-level, but only sort of.
+	set(0, "Type", { fg = colors.modules, bold = true }) -- Top-level, but only sort of.
 	-- Built-in types for some reason fall under the Treesitter @type.builtin
 
 	-- Misc
-	set(0, "Error", { fg = colors.light_white, bg = colors.red })
-	set(0, "Todo", { fg = colors.light_white, bg = colors.orange })
+	set(0, "Error", { fg = colors.light_white, bg = colors.error })
+	set(0, "Todo", { fg = colors.light_white, bg = colors.ansiYellow })
 
 	-- Diff
-	set(0, "Added", { fg = colors.light_yellow })
-	set(0, "Changed", { fg = colors.light_blue })
-	set(0, "Removed", { fg = colors.light_red })
+	set(0, "Added", { fg = colors.gut_add })
+	set(0, "Changed", { fg = colors.gut_mod })
+	set(0, "Removed", { fg = colors.gut_del })
 
 	-- Unknown types
-	set(0, "TodoBgTODO", { fg = colors.light_white, bg = colors.yellow })
-	set(0, "TodoFgTODO", { fg = colors.yellow })
-	set(0, "TodoSignTODO", { fg = colors.yellow })
-	set(0, "DiagnosticInfo", { fg = colors.light_purple })
-	set(0, "DiagnosticHint", { fg = colors.icy_blue })
-	set(0, "DiagnosticOk", { fg = colors.light_white })
-	set(0, "DiagnosticWarn", { fg = colors.light_orange })
-	set(0, "DiagnosticError", { fg = colors.light_red })
-	set(0, "DiagnosticUnderlineInfo", { sp = colors.light_purple, underline = true }) -- sp = special color (underlines, etc.)
-	set(0, "DiagnosticUnderlineHint", { sp = colors.icy_blue, underline = true })
-	set(0, "DiagnosticUnderlineOk", { sp = colors.light_white, underline = true })
-	set(0, "DiagnosticUnderlineWarn", { sp = colors.light_orange, underline = true })
-	set(0, "DiagnosticUnderlineError", { sp = colors.light_red, underline = true })
+	set(0, "TodoBgTODO", { fg = colors.ansiBrightWhite, bg = colors.git_unt })
+	set(0, "TodoFgTODO", { fg = colors.git_unt })
+	set(0, "TodoSignTODO", { fg = colors.git_unt })
+
+  -- Code diagnostics
+	set(0, "DiagnosticInfo", { fg = colors.info })
+	set(0, "DiagnosticUnderlineInfo", { sp = colors.info, underline = true }) -- sp = special color (underlines, etc.)
+	set(0, "DiagnosticHint", { fg = colors.hint })
+	set(0, "DiagnosticUnderlineHint", { sp = colors.hint, underline = true })
+	set(0, "DiagnosticOk", { fg = colors.ok })
+	set(0, "DiagnosticUnderlineOk", { sp = colors.ok, underline = true })
+	set(0, "DiagnosticWarn", { fg = colors.warn })
+	set(0, "DiagnosticUnderlineWarn", { sp = colors.warn, underline = true })
+	set(0, "DiagnosticError", { fg = colors.error })
+	set(0, "DiagnosticUnderlineError", { sp = colors.error, underline = true })
 
 	-- HIGHLIGHT GROUPS: Neovim
 	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
