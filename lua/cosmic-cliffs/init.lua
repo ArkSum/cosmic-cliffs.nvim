@@ -161,9 +161,9 @@ function M.setup()
 	set(0, "Conceal", { fg = colors.gray_4 })
 	set(0, "NonText", { fg = colors.gray_4 })
 	-- set(0, "Pmenu", { fg = colors.icy_blue, bg = colors.black })
-	set(0, "LineNrAbove", { fg = colors.gray_3 })
-	set(0, "CursorLineNr", { fg = colors.gray_4 })
-	set(0, "LineNrBelow", { fg = colors.gray_3 })
+	set(0, "LineNrAbove", { fg = colors.gray_4 })
+	set(0, "CursorLineNr", { fg = colors.gray_5 })
+	set(0, "LineNrBelow", { fg = colors.gray_4 })
 
 	-- TREESITTER HIGHLIGHT GROUPS
 	set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
