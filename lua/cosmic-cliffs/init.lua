@@ -140,23 +140,23 @@ function M.setup()
 	set(0, "DiagnosticUnderlineError", { sp = colors.error, underline = true })
 
 	-- HIGHLIGHT GROUPS: Neovim
-	set(0, "VertLine", { fg = colors.purple }) -- Doesn't seem to work
+	set(0, "VertLine", { fg = colors.ansiBlue }) -- Doesn't seem to work
 	-- PMENU = POP-UP MENU
-	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.white })
+	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.ansiWhite })
 	-- PMENUSEL_BG = STATUSLINE_NORMAL_BG
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	-- STATUSLINE = Line of text at the bottom of the interface
   -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = colors.red, fg = colors.light_white })
-	set(0, "lualine_b_normal", { bg = colors.orange, fg = colors.light_white })
-	set(0, "lualine_c_normal", { bg = colors.yellow, fg = colors.light_white })
-	set(0, "lualine_x_normal", { bg = colors.magenta, fg = colors.light_white })
-	set(0, "lualine_y_normal", { bg = colors.purple, fg = colors.light_white })
-	set(0, "lualine_z_normal", { bg = colors.blue, fg = colors.light_white })
-	set(0, "CursorLine", { bg = colors.light_black })
+	set(0, "lualine_a_normal", { bg = colors.ansiRed, fg = colors.ansiBrightWhite })
+	set(0, "lualine_b_normal", { bg = colors.ansiYellow, fg = colors.ansiBrightWhite })
+	set(0, "lualine_c_normal", { bg = colors.ansiGreen, fg = colors.ansiBrightWhite })
+	set(0, "lualine_x_normal", { bg = colors.ansiMagenta, fg = colors.ansiBrightWhite })
+	set(0, "lualine_y_normal", { bg = colors.ansiBlue, fg = colors.ansiBrightWhite })
+	set(0, "lualine_z_normal", { bg = colors.ansiCyan, fg = colors.ansiBrightWhite })
+	set(0, "CursorLine", { bg = colors.gray_1 })
 	set(0, "Visual", { bg = colors.gray_2 })
-	set(0, "CurSearch", { fg = colors.black, bg = colors.light_yellow })
-	set(0, "Search", { fg = colors.black, bg = colors.light_yellow })
+	set(0, "CurSearch", { fg = colors.black, bg = colors.ansiBrightYellow })
+	set(0, "Search", { fg = colors.black, bg = colors.ansiBrightYellow })
 	set(0, "CursorLine", { bg = colors.gray_2 })
 	set(0, "Conceal", { fg = colors.gray_4 })
 	set(0, "NonText", { fg = colors.gray_4 })
@@ -166,12 +166,12 @@ function M.setup()
 	set(0, "LineNrBelow", { fg = colors.gray_4 })
 
 	-- TREESITTER HIGHLIGHT GROUPS
-	set(0, "@type.builtin", { fg = colors.dark_blue, bold = true })
-	set(0, "@variable", { fg = colors.light_blue })
+	set(0, "@type.builtin", { fg = colors.modules, bold = true })
+	set(0, "@variable", { fg = colors.variables })
 
 	-- LSP HIGHLIGHT GROUPS
-	set(0, "@lsp.type.parameter", { fg = colors.light_orange })
-	set(0, "@lsp.type.variable", { fg = colors.light_blue })
+	set(0, "@lsp.type.parameter", { fg = colors.parameter })
+	set(0, "@lsp.type.variable", { fg = colors.variables })
 
 	-- PLUGINS
 
@@ -180,18 +180,18 @@ function M.setup()
 	-- set(0, "LazyCommit", { fg = colors.red })
 
 	-- TELESCOPE
-	set(0, "TelescopeNormal", { fg = colors.white })
-	set(0, "TelescopePromptBorder", { fg = colors.white })
+	set(0, "TelescopeNormal", { fg = colors.normal })
+	set(0, "TelescopePromptBorder", { fg = colors.normal })
 
 	-- NOICECMDLINE
-	set(0, "NoiceCmdlinePopupBorder", { fg = colors.light_magenta })
-	set(0, "NoiceCmdlineIcon", { fg = colors.magenta })
-	set(0, "NoiceCmdline", { fg = colors.red })
+	set(0, "NoiceCmdlinePopupBorder", { fg = colors.ansiBrightMagenta })
+	set(0, "NoiceCmdlineIcon", { fg = colors.ansiMagenta })
+	set(0, "NoiceCmdline", { fg = colors.ansiRed })
 
 	-- NEOTREE
-	set(0, "NeoTreeFloatBorder", { fg = colors.light_magenta })
-	set(0, "NeoTreeTitleBar", { fg = colors.magenta })
-	set(0, "NeoTreeNormal", { fg = colors.white })
+	set(0, "NeoTreeFloatBorder", { fg = colors.ansiBrightMagenta })
+	set(0, "NeoTreeTitleBar", { fg = colors.ansiMagenta })
+	set(0, "NeoTreeNormal", { fg = colors.normal })
 	set(0, "Directory", { fg = colors.gray_6 })
 end
 
