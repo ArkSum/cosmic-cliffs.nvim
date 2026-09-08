@@ -89,6 +89,17 @@ function M.setup()
 	set(0, "Folded", { fg = colors.normal })
 	set(0, "Title", { fg = colors.warn })
 
+	-- STATUSLINE = Line of text at the bottom of the interface
+  -- Uses the lualine plugin, so those are the highlight groups used
+	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
+  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
+	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
+  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
+	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
+
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.comment })
 
@@ -153,17 +164,7 @@ function M.setup()
 	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.ansiWhite })
 	-- PMENUSEL_BG = STATUSLINE_NORMAL_BG
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
-	-- STATUSLINE = Line of text at the bottom of the interface
-  -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
-  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
-	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
-  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
-	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
-
+  -- PLACEHOLDER = the highlights for LUALINE should go here
 	set(0, "CursorLine", { bg = colors.gray_1 })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.ansiBrightYellow })
