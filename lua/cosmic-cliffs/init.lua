@@ -46,9 +46,10 @@ function M.setup()
 
 	-- Special
 	set(0, "Special", { fg = colors.bracket1 }) -- Top-level
+	set(0, "Tag", { fg = colors.bracket6 }) -- Top-level
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.bracket6 })
-  set(0, "MatchParen", { fg = colors.info })
+  set(0, "MatchParen", { bg = colors.normal, fg = colors.parameter })
 
 	-- Types
 	set(0, "Type", { fg = colors.modules, bold = true }) -- Top-level, but only sort of.
