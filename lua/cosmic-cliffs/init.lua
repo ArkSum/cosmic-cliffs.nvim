@@ -1,6 +1,7 @@
 local M = {}
 
 local colors = {
+  -- UI Colors: Basic backgrounds/foregrounds
 	black = "#0e091b",
 	gray_1 = "#1c1431",
 	gray_2 = "#31264d",
@@ -9,6 +10,7 @@ local colors = {
 	gray_5 = "#9f97b8",
 	gray_6 = "#d6d3df",
 
+  -- Language Colors
   normal = "#ecdbd4",
   comment = "#6f6098",
   numeric = "#90e4e4",
@@ -20,22 +22,27 @@ local colors = {
   variables = "#7ab4ff",
   parameter = "#c4a2e6",
 
+  -- Git Colors
   git_mod = "#daa76e",
   git_unt = "#5fd4d4",
 	git_cfl = "#db4343",
   git_del = "#ed8f8f",
   git_ign = "#6f6098",
 
+  -- Git Gutter Colors
   gut_del = "#ed8f8f",
   gut_add = "#7ab4ff",
   gut_mod = "#daa76e",
 
+  -- Neovim messages
   ok = "#90e4e4",
   hint = "#3183ff",
   info = "#c4a2e6",
-  warn = "#edbaa0",
+  warn = "#f27e44",
   error = "#db4343",
 
+  -- Brackets
+  -- TODO: Need to implement groups for these
   bracket1 = "#ffe2d7",
   bracket2 = "#eac0b9",
   bracket3 = "#d59e9b",
@@ -43,6 +50,7 @@ local colors = {
   bracket5 = "#aa5a60",
   bracket6 = "#953842",
 
+  -- Terminal colors
   ansiBlack = "#1c1431",
   ansiRed = "#db4343",
   ansiGreen = "#df9c5e",
@@ -79,7 +87,7 @@ function M.setup()
 	set(0, "NormalNC", { fg = colors.normal })
 	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.black })
 	set(0, "Folded", { fg = colors.normal })
-	set(0, "Title", { fg = colors.orange })
+	set(0, "Title", { fg = colors.warn })
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.comment })
@@ -114,8 +122,8 @@ function M.setup()
 	-- Built-in types for some reason fall under the Treesitter @type.builtin
 
 	-- Misc
-	set(0, "Error", { fg = colors.light_white, bg = colors.error })
-	set(0, "Todo", { fg = colors.light_white, bg = colors.ansiYellow })
+	set(0, "Error", { fg = colors.ansiBrightWhite, bg = colors.error })
+	set(0, "Todo", { fg = colors.ansiBrightWhite, bg = colors.ansiYellow })
 
 	-- Diff
 	set(0, "Added", { fg = colors.gut_add })
@@ -147,12 +155,15 @@ function M.setup()
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	-- STATUSLINE = Line of text at the bottom of the interface
   -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = colors.ansiRed, fg = colors.ansiBrightWhite })
-	set(0, "lualine_b_normal", { bg = colors.ansiYellow, fg = colors.ansiBrightWhite })
-	set(0, "lualine_c_normal", { bg = colors.ansiGreen, fg = colors.ansiBrightWhite })
-	set(0, "lualine_x_normal", { bg = colors.ansiMagenta, fg = colors.ansiBrightWhite })
-	set(0, "lualine_y_normal", { bg = colors.ansiBlue, fg = colors.ansiBrightWhite })
-	set(0, "lualine_z_normal", { bg = colors.ansiCyan, fg = colors.ansiBrightWhite })
+	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
+  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
+	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
+  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
+	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
+
 	set(0, "CursorLine", { bg = colors.gray_1 })
 	set(0, "Visual", { bg = colors.gray_2 })
 	set(0, "CurSearch", { fg = colors.black, bg = colors.ansiBrightYellow })
