@@ -155,7 +155,7 @@ function M.setup()
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black })
 	-- STATUSLINE = Line of text at the bottom of the interface
   -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_a_normal", { guibg = "#ff0000", guifg = "#ffffff" })
   set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
 	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
   set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
