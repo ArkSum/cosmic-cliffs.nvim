@@ -181,14 +181,6 @@ function M.setup()
 
 	-- STATUSLINE = Line of text at the bottom of the interface
   -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
-  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
-	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
-  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
-	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
 
 	-- TELESCOPE
 	set(0, "TelescopeNormal", { fg = colors.normal })
@@ -205,7 +197,6 @@ function M.setup()
 	set(0, "NeoTreeNormal", { fg = colors.normal })
 	set(0, "Directory", { fg = colors.gray_6 })
 
-  require('lualine').setup({ options = { theme = "cosmic-cliffs" }})
 end
 
 return M
