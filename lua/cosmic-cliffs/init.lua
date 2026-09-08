@@ -179,7 +179,6 @@ function M.setup()
 	-- Just for the expanded commit view
 	-- set(0, "LazyCommit", { fg = colors.red })
 
-
 	-- STATUSLINE = Line of text at the bottom of the interface
   -- Uses the lualine plugin, so those are the highlight groups used
 	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
@@ -206,7 +205,7 @@ function M.setup()
 	set(0, "NeoTreeNormal", { fg = colors.normal })
 	set(0, "Directory", { fg = colors.gray_6 })
 
-
+  require('lualine').setup({ options = { theme = "cosmic-cliffs" }})
 end
 
 return M
