@@ -50,6 +50,7 @@ function M.setup()
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.bracket6 })
   set(0, "MatchParen", { bg = colors.normal, fg = colors.parameter })
+  set(0, "Delimiter", { fg = colors.bracket6 })
 
 	-- Types
 	set(0, "Type", { fg = colors.modules, bold = true }) -- Top-level, but only sort of.
