@@ -45,9 +45,10 @@ function M.setup()
 	set(0, "PreProc", { fg = colors.keyword }) -- Top-level
 
 	-- Special
-	set(0, "Special", { fg = colors.const }) -- Top-level
+	set(0, "Special", { fg = colors.bracket1 }) -- Top-level
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.const })
+  set(0, "MatchParen", { fg = colors.info })
 
 	-- Types
 	set(0, "Type", { fg = colors.modules, bold = true }) -- Top-level, but only sort of.
