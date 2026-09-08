@@ -88,18 +88,6 @@ function M.setup()
 	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.black })
 	set(0, "Folded", { fg = colors.normal })
 	set(0, "Title", { fg = colors.warn })
-
-	-- STATUSLINE = Line of text at the bottom of the interface
-  -- Uses the lualine plugin, so those are the highlight groups used
-	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
-  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
-	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
-  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
-	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
-	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
-
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.comment })
 
@@ -190,6 +178,18 @@ function M.setup()
 	-- LAZYVIM
 	-- Just for the expanded commit view
 	-- set(0, "LazyCommit", { fg = colors.red })
+
+
+	-- STATUSLINE = Line of text at the bottom of the interface
+  -- Uses the lualine plugin, so those are the highlight groups used
+	set(0, "lualine_a_normal", { bg = "#ff0000", fg = "#ffffff" })
+  set(0, "lualine_transitional_lualine_a_normal_to_lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" } )
+	set(0, "lualine_b_normal", { bg = "#ffffff", fg = "#ff0000" })
+  set(0, "lualine_transitional_lualine_b_normal_to_lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" } )
+	set(0, "lualine_c_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_x_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_y_normal", { bg = "#ff0000", fg = "#ffffff" })
+	set(0, "lualine_z_normal", { bg = "#ff0000", fg = "#ffffff" })
 
 	-- TELESCOPE
 	set(0, "TelescopeNormal", { fg = colors.normal })
