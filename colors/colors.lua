@@ -39,15 +39,6 @@ return {
   warn = "#f27e44",
   error = "#db4343",
 
-  -- Brackets
-  -- TODO: Need to implement groups for these
-  bracket1 = "#ffe2d7",
-  bracket2 = "#eac0b9",
-  bracket3 = "#d59e9b",
-  bracket4 = "#bf7c7e",
-  bracket5 = "#aa5a60",
-  bracket6 = "#953842",
-
   -- Terminal colors
   ansiBlack = "#1c1431",
   ansiRed = "#db4343",
