@@ -33,7 +33,7 @@ function M.setup()
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black }) -- Popup menu: Selected item
 	set(0, "PmenuBorder", { fg = colors.info }) -- Popup menu: border of popup menu
 	set(0, "Search", { fg = colors.black, bg = colors.ansiYellow }) -- Last search pattern highlighting
-	set(0, "TabLine", { fg = colors.normal, bg = colors.gray_3 }) -- Tabpages line, not active tabpage label
+	set(0, "TabLine", { fg = colors.normal, bg = colors.gray_2 }) -- Tabpages line, not active tabpage label
 	set(0, "TabLineFill", { fg = colors.normal, bg = colors.gray_1 }) -- Tabpages line, where there are no labels
 	set(0, "TabLineSel", { fg = colors.normal, bg = colors.gray_4, bold = true }) -- Tabpages line, active tabpage label
 
