@@ -49,8 +49,9 @@ function M.setup()
 	set(0, "Tag", { fg = colors.bracket6 }) -- Top-level
 	-- ^This^ also applies to the LazyVim main menu
 	set(0, "SpecialChar", { fg = colors.bracket6 })
-  set(0, "MatchParen", { bg = colors.normal, fg = colors.parameter })
-  set(0, "Delimiter", { fg = colors.bracket6 })
+  set(0, "MatchParen", { bg = colors.keyword, fg = colors.normal })
+  -- set(0, "Delimiter", { fg = colors.normal })
+  -- Delimiter is for periods, commans, _and_ parentheses
 
 	-- Types
 	set(0, "Type", { fg = colors.modules, bold = true }) -- Top-level, but only sort of.
