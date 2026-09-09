@@ -1,4 +1,4 @@
-local colors = require("colors.colors")
+local colors = require("./colors.colors")
 
 local M = {}
 
