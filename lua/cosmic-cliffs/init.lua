@@ -11,18 +11,12 @@ function M.setup()
 
 	local set = vim.api.nvim_set_hl
 
-	-- These groups are in the order of the NAMING CONVENTIONS section of the
-	-- syntax.txt help page. The exception is types, because they need to be done
-	-- after defining the special groups
-	-- What do some of the abbreviations and terms mean?
-	-- NC: Non-current
 	-- HIGHLIGHT GROUPS: Neovim
   set(0, "ColorColumn", { fg = colors.normal, bg = colors.gray_2 }) -- Used for the columns set with 'colorcolumn'
 	set(0, "Conceal", { fg = colors.gray_4 }) -- Placeholder characters substituted for concealed text
 	set(0, "CurSearch", { fg = colors.black, bg = colors.ansiBrightYellow }) -- Current match for the last serach pattern
 	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.black }) -- Character under the cursor
 	set(0, "CursorLine", { bg = colors.gray_2 }) -- Screen-line at the cursor, when 'cursorline' is set
-
 	set(0, "Directory", { bg = colors.command }) -- Directory names
 	set(0, "DiffAdd", { fg = colors.normal, bg = colors.git_add }) -- Diff mode: Added line
 	set(0, "DiffChange", { fg = colors.normal, bg = colors.git_mod }) -- Diff mode: Changed line
@@ -39,9 +33,10 @@ function M.setup()
 	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black }) -- Popup menu: Selected item
 	set(0, "PmenuBorder", { fg = colors.info }) -- Popup menu: border of popup menu
 	set(0, "Search", { fg = colors.black, bg = colors.ansiYellow }) -- Last search pattern highlighting
-	set(0, "TabLine", { fg = colors.normal, bg = colors.gray_2 }) -- Tabpages line, not active tabpage label
-	set(0, "TabLineFill", { fg = colors.normal, bg = colors.gray_2 }) -- Tabpages line, where there are no labels
+	set(0, "TabLine", { fg = colors.normal, bg = colors.gray_3 }) -- Tabpages line, not active tabpage label
+	set(0, "TabLineFill", { fg = colors.normal, bg = colors.gray_1 }) -- Tabpages line, where there are no labels
 	set(0, "TabLineSel", { fg = colors.normal, bg = colors.gray_4, bold = true }) -- Tabpages line, active tabpage label
+
 	set(0, "Title", { fg = colors.warn }) -- Titles for output from ":set all", ":autocmd", etc.
 	set(0, "Visual", { bg = colors.gray_3 }) -- Visual mode selection
   set(0, "Whitespace", { fg = colors.gray_3 }) -- "nbsp", "space", "tab", "multispace", "lead", and "trail" in 'listchars'
