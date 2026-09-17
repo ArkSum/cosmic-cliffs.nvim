@@ -44,17 +44,17 @@ local colors = {
   ansiRed = "#db4343",
   ansiGreen = "#df9c5e",
   ansiYellow = "#d27445",
-  ansiBlue = "#8e4ad2",
+  ansiBlue = "#3183ff",
   ansiMagenta = "#d43adf",
-  ansiCyan = "#3183ff",
+  ansiCyan = "#8e4ad2",
   ansiWhite = "#d6d3df",
   ansiBrightBlack = "#31264d",
   ansiBrightRed = "#ed8f8f",
   ansiBrightGreen = "#daa76e",
   ansiBrightYellow = "#edbaa0",
-  ansiBrightBlue = "#c4a2e6",
+  ansiBrightBlue = "#7ab4ff",
   ansiBrightMagenta = "#e1b5e4",
-  ansiBrightCyan = "#7ab4ff",
+  ansiBrightCyan = "#c4a2e6",
   ansiBrightWhite = "#ffffff"
 }
 
