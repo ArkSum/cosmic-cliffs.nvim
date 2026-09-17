@@ -1,12 +1,13 @@
 return {
   -- UI Colors: Basic backgrounds/foregrounds
-	black = "#0e091b",
-	gray_1 = "#1c1431",
-	gray_2 = "#31264d",
-	gray_3 = "#4c3f70",
-	gray_4 = "#6f6098",
-	gray_5 = "#9f97b8",
-	gray_6 = "#d6d3df",
+	bg = "#0e091b",
+	ui_1 = "#1c1431",
+	ui_2 = "#31264d",
+	ui_3 = "#4c3f70",
+	ui_4 = "#6f6098",
+	ui_5 = "#9f97b8",
+	ui_6 = "#d6d3df",
+  fg = "#ecdbd4",
 
   -- Language Colors
   normal = "#ecdbd4",

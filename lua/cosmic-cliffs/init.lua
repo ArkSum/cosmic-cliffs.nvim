@@ -12,34 +12,34 @@ function M.setup()
 	local set = vim.api.nvim_set_hl
 
 	-- HIGHLIGHT GROUPS: Neovim
-  set(0, "ColorColumn", { fg = colors.normal, bg = colors.gray_2 }) -- Used for the columns set with 'colorcolumn'
-	set(0, "Conceal", { fg = colors.gray_4 }) -- Placeholder characters substituted for concealed text
-	set(0, "CurSearch", { fg = colors.black, bg = colors.ansiBrightYellow }) -- Current match for the last serach pattern
-	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.black }) -- Character under the cursor
-	set(0, "CursorLine", { bg = colors.gray_2 }) -- Screen-line at the cursor, when 'cursorline' is set
+  set(0, "ColorColumn", { fg = colors.normal, bg = colors.ui_2 }) -- Used for the columns set with 'colorcolumn'
+	set(0, "Conceal", { fg = colors.ui_4 }) -- Placeholder characters substituted for concealed text
+	set(0, "CurSearch", { fg = colors.bg, bg = colors.ansiBrightYellow }) -- Current match for the last serach pattern
+	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.bg }) -- Character under the cursor
+	set(0, "CursorLine", { bg = colors.ui_2 }) -- Screen-line at the cursor, when 'cursorline' is set
 	set(0, "Directory", { bg = colors.command }) -- Directory names
 	set(0, "DiffAdd", { fg = colors.normal, bg = colors.git_add }) -- Diff mode: Added line
 	set(0, "DiffChange", { fg = colors.normal, bg = colors.git_mod }) -- Diff mode: Changed line
 	set(0, "DiffDelete", { fg = colors.normal, bg = colors.git_del }) -- Diff mode: Deleted line
 	set(0, "Folded", { fg = colors.normal }) -- Line used for closed folds
-	set(0, "LineNrAbove", { fg = colors.gray_4 }) -- Line number for when the 'relativenumber' option is set, above the cursor line.
-	set(0, "LineNrBelow", { fg = colors.gray_4 }) -- Line number for when the 'relativenumber' option is set, below the cursor line.
-	set(0, "CursorLineNr", { fg = colors.gray_6 }) -- Line number for when 'cursorline' option is set
+	set(0, "LineNrAbove", { fg = colors.ui_4 }) -- Line number for when the 'relativenumber' option is set, above the cursor line.
+	set(0, "LineNrBelow", { fg = colors.ui_4 }) -- Line number for when the 'relativenumber' option is set, below the cursor line.
+	set(0, "CursorLineNr", { fg = colors.ui_6 }) -- Line number for when 'cursorline' option is set
   set(0, "MatchParen", { bg = colors.keyword, fg = colors.normal }) -- Character under the cursor or just before it, if it is a paired bracket and its match.
-	set(0, "NonText", { fg = colors.gray_4 }) -- '@' at the end of the window, characters from 'showbreak' and other characters that don't exist in the text
+	set(0, "NonText", { fg = colors.ui_4 }) -- '@' at the end of the window, characters from 'showbreak' and other characters that don't exist in the text
 	set(0, "Normal", { fg = colors.normal }) -- Normal text.
 	set(0, "NormalNC", { fg = colors.normal }) -- Normal text in non-current windows
-	set(0, "Pmenu", { bg = colors.gray_3, fg = colors.ansiWhite }) -- Popup menu: normal item
-	set(0, "PmenuSel", { bg = colors.gray_4, fg = colors.black }) -- Popup menu: Selected item
+	set(0, "Pmenu", { bg = colors.ui_3, fg = colors.ansiWhite }) -- Popup menu: normal item
+	set(0, "PmenuSel", { bg = colors.ui_4, fg = colors.bg }) -- Popup menu: Selected item
 	set(0, "PmenuBorder", { fg = colors.info }) -- Popup menu: border of popup menu
-	set(0, "Search", { fg = colors.black, bg = colors.ansiYellow }) -- Last search pattern highlighting
-	set(0, "TabLine", { fg = colors.normal, bg = colors.gray_2 }) -- Tabpages line, not active tabpage label
-	set(0, "TabLineFill", { fg = colors.normal, bg = colors.gray_1 }) -- Tabpages line, where there are no labels
-	set(0, "TabLineSel", { fg = colors.normal, bg = colors.gray_4, bold = true }) -- Tabpages line, active tabpage label
+	set(0, "Search", { fg = colors.bg, bg = colors.ansiYellow }) -- Last search pattern highlighting
+	set(0, "TabLine", { fg = colors.normal, bg = colors.ui_2 }) -- Tabpages line, not active tabpage label
+	set(0, "TabLineFill", { fg = colors.normal, bg = colors.ui_1 }) -- Tabpages line, where there are no labels
+	set(0, "TabLineSel", { fg = colors.normal, bg = colors.ui_4, bold = true }) -- Tabpages line, active tabpage label
 
 	set(0, "Title", { fg = colors.warn }) -- Titles for output from ":set all", ":autocmd", etc.
-	set(0, "Visual", { bg = colors.gray_3 }) -- Visual mode selection
-  set(0, "Whitespace", { fg = colors.gray_3 }) -- "nbsp", "space", "tab", "multispace", "lead", and "trail" in 'listchars'
+	set(0, "Visual", { bg = colors.ui_3 }) -- Visual mode selection
+  set(0, "Whitespace", { fg = colors.ui_3 }) -- "nbsp", "space", "tab", "multispace", "lead", and "trail" in 'listchars'
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.comment }) -- any comment
@@ -61,7 +61,7 @@ function M.setup()
 	set(0, "Conditional", { fg = colors.keyword }) -- if, then, else, endif, switch, etc.
   set(0, "Repeat", { fg = colors.keyword }) -- for, do, while, etc.
   set(0, "Label", { fg = colors.keyword }) -- case, default, etc.
-  set(0, "Operator", { fg = colors.normal })  -- NOTE: This is different from others!
+  set(0, "Operator", { fg = colors.fg })  -- NOTE: This is different from others!
 
 	set(0, "Keyword", { fg = colors.keyword }) -- any other keyword
 	set(0, "Exception", { fg = colors.keyword }) -- try, catch, throw
@@ -86,13 +86,13 @@ function M.setup()
 	set(0, "SpecialChar", { fg = colors.bracket6 }) -- special character in a string constant
   -- This is something like \n in string constants
 	set(0, "Tag", { fg = colors.bracket6 }) -- you can use CTRL-] on this (XML tag delimiters???)
-  set(0, "Delimiter", { fg = colors.normal }) -- character that needs attention (period, comma, parentheses, etc.)
-  set(0, "SpecialComment", { fg = colors.gray_5 }) -- special things inside a comment (who knows what that means)
+  set(0, "Delimiter", { fg = colors.fg }) -- character that needs attention (period, comma, parentheses, etc.)
+  set(0, "SpecialComment", { fg = colors.ui_5 }) -- special things inside a comment (who knows what that means)
 
 	-- Misc
 	set(0, "Underlined", { fg = colors.command }) -- text that stands out, HTML links
 
-  set(0, "Ignore", { fg = colors.normal }) -- left blank, hidden (who knows what this means)
+  set(0, "Ignore", { fg = colors.fg }) -- left blank, hidden (who knows what this means)
 
 	set(0, "Error", { fg = colors.ansiBrightWhite, bg = colors.error }) -- any erroneous construct
 
@@ -141,8 +141,8 @@ function M.setup()
   -- Uses the lualine plugin, so those are the highlight groups used
 
 	-- TELESCOPE
-	set(0, "TelescopeNormal", { fg = colors.normal })
-	set(0, "TelescopePromptBorder", { fg = colors.normal })
+	set(0, "TelescopeNormal", { fg = colors.fg })
+	set(0, "TelescopePromptBorder", { fg = colors.fg })
 
 	-- NOICECMDLINE
 	set(0, "NoiceCmdlinePopupBorder", { fg = colors.ansiBrightMagenta })
@@ -152,8 +152,8 @@ function M.setup()
 	-- NEOTREE
 	set(0, "NeoTreeFloatBorder", { fg = colors.ansiBrightMagenta })
 	set(0, "NeoTreeTitleBar", { fg = colors.ansiMagenta })
-	set(0, "NeoTreeNormal", { fg = colors.normal })
-	set(0, "Directory", { fg = colors.gray_6 })
+	set(0, "NeoTreeNormal", { fg = colors.fg })
+	set(0, "Directory", { fg = colors.ui_6 })
 end
 
 return M
