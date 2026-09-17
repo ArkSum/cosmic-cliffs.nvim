@@ -39,6 +39,14 @@ return {
   warn = "#f27e44",
   error = "#db4343",
 
+  -- Lualine colors
+  normal_mode = "#6f6098",
+  insert_mode = "#c06054",
+  visual_mode = "#c4a2e6",
+  replace_mode = "#3183ff",
+  command_mode = "#90e4e4",
+  inactive_mode = "#4c3f70",
+
   -- Terminal colors
   ansiBlack = "#1c1431",
   ansiRed = "#db4343",
