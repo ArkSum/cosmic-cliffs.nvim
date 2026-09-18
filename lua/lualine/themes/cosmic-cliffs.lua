@@ -4,14 +4,14 @@ return {
   normal = {
     a = { fg = colors.normal, bg = colors.normal_mode },
     b = { fg = colors.normal, bg = colors.inactive_mode },
-    c = { fg = colors.normal, bg = colors.gray_1 }
+    c = { fg = colors.normal, bg = colors.ui_1 }
   },
   insert = {
     a = { fg = colors.normal, bg = colors.insert_mode },
     b = { fg = colors.normal, bg = colors.inactive_mode },
   },
   visual = {
-    a = { fg = colors.gray_1, bg = colors.visual_mode },
+    a = { fg = colors.ui_1, bg = colors.visual_mode },
     b = { fg = colors.normal, bg = colors.inactive_mode },
   },
   replace = {
@@ -19,12 +19,12 @@ return {
     b = { fg = colors.normal, bg = colors.inactive_mode },
   },
   command = {
-    a = { fg = colors.gray_1, bg = colors.command_mode },
+    a = { fg = colors.ui_1, bg = colors.command_mode },
     b = { fg = colors.normal, bg = colors.inactive_mode },
   },
   inactive = {
     a = { fg = colors.normal, bg = colors.inactive_mode },
-    b = { fg = colors.normal, bg = colors.gray_3 },
-    c = { fg = colors.normal, bg = colors.gray_1 }
+    b = { fg = colors.normal, bg = colors.ui_3 },
+    c = { fg = colors.normal, bg = colors.ui_1 }
   },
 }

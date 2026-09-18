@@ -53,7 +53,7 @@ function M.setup()
 	set(0, "Boolean", { fg = colors.const, bold = true }) -- a boolean constant
 
 
-	set(0, "Identifier", { fg = colors.variables }) -- any variable name
+	set(0, "Identifier", { fg = colors.variable }) -- any variable name
 	set(0, "Function", { fg = colors.func }) -- function name (also: methods for classes)
 
 	-- Statements
@@ -75,10 +75,10 @@ function M.setup()
 
 	-- Types
 	-- Built-in types for some reason fall under the Treesitter @type.builtin
-	set(0, "Type", { fg = colors.modules, bold = true }) -- int, long, char, etc.
-  set(0, "StorageClass", { fg = colors.modules, bold = true }) -- static, register, volatile, etc.
-  set(0, "Structure", { fg = colors.modules, bold = true }) -- struct, union, enum, etc.
-  set(0, "Typedef", { fg = colors.modules, bold = true }) -- a typedef
+	set(0, "Type", { fg = colors.module, bold = true }) -- int, long, char, etc.
+  set(0, "StorageClass", { fg = colors.module, bold = true }) -- static, register, volatile, etc.
+  set(0, "Structure", { fg = colors.module, bold = true }) -- struct, union, enum, etc.
+  set(0, "Typedef", { fg = colors.module, bold = true }) -- a typedef
 
 	-- Special
 	set(0, "Special", { fg = colors.bracket1 }) -- any special symbol
@@ -100,9 +100,9 @@ function M.setup()
   -- NOTE: This is overriden later by specific colorations!                -- mostly the keywords, TODO FIXME and XXX
 
 	-- Diff
-	set(0, "Added", { fg = colors.gut_add }) -- added line in a diff
-	set(0, "Changed", { fg = colors.gut_mod }) -- changed line in a diff
-	set(0, "Removed", { fg = colors.gut_del }) -- removed line in a diff
+	set(0, "Added", { fg = colors.git_add }) -- added line in a diff
+	set(0, "Changed", { fg = colors.git_mod }) -- changed line in a diff
+	set(0, "Removed", { fg = colors.git_del }) -- removed line in a diff
 
   -- END OF SYNTAX.TXT groups --
 
@@ -124,12 +124,12 @@ function M.setup()
 
 
 	-- TREESITTER HIGHLIGHT GROUPS
-	set(0, "@type.builtin", { fg = colors.modules, bold = true })
-	set(0, "@variable", { fg = colors.variables })
+	set(0, "@type.builtin", { fg = colors.module, bold = true })
+	set(0, "@variable", { fg = colors.variable })
 
 	-- LSP HIGHLIGHT GROUPS
 	set(0, "@lsp.type.parameter", { fg = colors.parameter })
-	set(0, "@lsp.type.variable", { fg = colors.variables })
+	set(0, "@lsp.type.variable", { fg = colors.variable })
 
 	-- PLUGINS
 

@@ -17,21 +17,17 @@ return {
   keyword = "#c06054",
   const = "#8e4ad2",
   func = "#edbaa0",
-  modules = "#3183ff",
-  variables = "#7ab4ff",
+  module = "#3183ff",
+  variable = "#7ab4ff",
   parameter = "#c4a2e6",
 
   -- Git Colors
   git_mod = "#daa76e",
+  git_add = "#7ab4ff",
   git_unt = "#5fd4d4",
 	git_cfl = "#db4343",
   git_del = "#ed8f8f",
   git_ign = "#6f6098",
-
-  -- Git Gutter Colors
-  gut_del = "#ed8f8f",
-  gut_add = "#7ab4ff",
-  gut_mod = "#daa76e",
 
   -- Neovim messages
   ok = "#90e4e4",
@@ -64,6 +60,6 @@ return {
   ansiBrightBlue = "#7ab4ff",
   ansiBrightMagenta = "#e1b5e4",
   ansiBrightCyan = "#c4a2e6",
-  ansiBrightWhite = "#ffffff"
+  ansiBrightWhite = "#ffffff",
 }
 
