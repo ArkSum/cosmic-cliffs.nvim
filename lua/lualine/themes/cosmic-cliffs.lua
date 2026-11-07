@@ -1,4 +1,4 @@
-local colors = require("cosmic-cliffs.theme-colors")
+local colors = require("cosmic-cliffs.cosmic-cliffs-colors")
 
 return {
   normal = {

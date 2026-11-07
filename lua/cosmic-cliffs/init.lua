@@ -1,4 +1,4 @@
-local colors = require("cosmic-cliffs.theme-colors")
+local colors = require("cosmic-cliffs.cosmic-cliffs-colors")
 
 local M = {}
 
@@ -12,73 +12,74 @@ function M.setup()
 	local set = vim.api.nvim_set_hl
 
 	-- HIGHLIGHT GROUPS: Neovim
-  set(0, "ColorColumn", { fg = colors.normal, bg = colors.ui_2 }) -- Used for the columns set with 'colorcolumn'
+    set(0, "ColorColumn", { fg = colors.src, bg = colors.ui_2 }) -- Used for the columns set with 'colorcolumn'
 	set(0, "Conceal", { fg = colors.ui_4 }) -- Placeholder characters substituted for concealed text
 	set(0, "CurSearch", { fg = colors.bg, bg = colors.ansiBrightYellow }) -- Current match for the last serach pattern
 	set(0, "Cursor", { bg = colors.ansiWhite, fg = colors.bg }) -- Character under the cursor
 	set(0, "CursorLine", { bg = colors.ui_2 }) -- Screen-line at the cursor, when 'cursorline' is set
 	set(0, "Directory", { bg = colors.command }) -- Directory names
-	set(0, "DiffAdd", { fg = colors.normal, bg = colors.git_add }) -- Diff mode: Added line
-	set(0, "DiffChange", { fg = colors.normal, bg = colors.git_mod }) -- Diff mode: Changed line
-	set(0, "DiffDelete", { fg = colors.normal, bg = colors.git_del }) -- Diff mode: Deleted line
-	set(0, "Folded", { fg = colors.normal }) -- Line used for closed folds
+	set(0, "DiffAdd", { fg = colors.src, bg = colors.git_add }) -- Diff mode: Added line
+	set(0, "DiffChange", { fg = colors.src, bg = colors.git_mod }) -- Diff mode: Changed line
+	set(0, "DiffDelete", { fg = colors.src, bg = colors.git_del }) -- Diff mode: Deleted line
+	set(0, "Folded", { fg = colors.src }) -- Line used for closed folds
 	set(0, "LineNrAbove", { fg = colors.ui_4 }) -- Line number for when the 'relativenumber' option is set, above the cursor line.
 	set(0, "LineNrBelow", { fg = colors.ui_4 }) -- Line number for when the 'relativenumber' option is set, below the cursor line.
 	set(0, "CursorLineNr", { fg = colors.ui_6 }) -- Line number for when 'cursorline' option is set
-  set(0, "MatchParen", { bg = colors.keyword, fg = colors.normal }) -- Character under the cursor or just before it, if it is a paired bracket and its match.
+    set(0, "MatchParen", { bg = colors.keyword, fg = colors.src }) -- Character under the cursor or just before it, if it is a paired bracket and its match.
 	set(0, "NonText", { fg = colors.ui_4 }) -- '@' at the end of the window, characters from 'showbreak' and other characters that don't exist in the text
-	set(0, "Normal", { fg = colors.normal }) -- Normal text.
-	set(0, "NormalNC", { fg = colors.normal }) -- Normal text in non-current windows
+	set(0, "Normal", { fg = colors.src }) -- Normal text.
+	set(0, "NormalNC", { fg = colors.src }) -- Normal text in non-current windows
 	set(0, "Pmenu", { bg = colors.ui_3, fg = colors.ansiWhite }) -- Popup menu: normal item
 	set(0, "PmenuSel", { bg = colors.ui_4, fg = colors.bg }) -- Popup menu: Selected item
 	set(0, "PmenuBorder", { fg = colors.info }) -- Popup menu: border of popup menu
 	set(0, "Search", { fg = colors.bg, bg = colors.ansiYellow }) -- Last search pattern highlighting
-	set(0, "TabLine", { fg = colors.normal, bg = colors.ui_2 }) -- Tabpages line, not active tabpage label
-	set(0, "TabLineFill", { fg = colors.normal, bg = colors.ui_1 }) -- Tabpages line, where there are no labels
-	set(0, "TabLineSel", { fg = colors.normal, bg = colors.ui_4, bold = true }) -- Tabpages line, active tabpage label
+	set(0, "TabLine", { fg = colors.src, bg = colors.ui_2 }) -- Tabpages line, not active tabpage label
+	set(0, "TabLineFill", { fg = colors.src, bg = colors.ui_1 }) -- Tabpages line, where there are no labels
+	set(0, "TabLineSel", { fg = colors.src, bg = colors.ui_4, bold = true }) -- Tabpages line, active tabpage label
 
 	set(0, "Title", { fg = colors.warn }) -- Titles for output from ":set all", ":autocmd", etc.
 	set(0, "Visual", { bg = colors.ui_3 }) -- Visual mode selection
-  set(0, "Whitespace", { fg = colors.ui_3 }) -- "nbsp", "space", "tab", "multispace", "lead", and "trail" in 'listchars'
+    set(0, "Whitespace", { fg = colors.ui_3 }) -- "nbsp", "space", "tab", "multispace", "lead", and "trail" in 'listchars'
 
 	-- SYNTAX HIGHLIGHTING GROUPS
 	set(0, "Comment", { fg = colors.comment }) -- any comment
 
 	-- Constants
 	set(0, "Constant", { fg = colors.const, bold = true }) -- any constant (non-variable value)
+	set(0, "@constant.builtin", { fg = colors.const, bold = true }) -- any constant (non-variable value)
 	set(0, "String", { fg = colors.string }) -- a string constant
 	set(0, "Character", { fg = colors.string }) -- a character constant
-	set(0, "Number", { fg = colors.numeric, bold = true }) -- an integer constant
-	set(0, "Float", { fg = colors.numeric, bold = true }) -- a floating point constant
+	set(0, "Number", { fg = colors.num, bold = true }) -- an integer constant
+	set(0, "Float", { fg = colors.num, bold = true }) -- a floating point constant
 	set(0, "Boolean", { fg = colors.const, bold = true }) -- a boolean constant
 
 
-	set(0, "Identifier", { fg = colors.variable }) -- any variable name
+	set(0, "Identifier", { fg = colors.var }) -- any variable name
 	set(0, "Function", { fg = colors.func }) -- function name (also: methods for classes)
 
 	-- Statements
 	set(0, "Statement", { fg = colors.keyword }) -- any statement
 	set(0, "Conditional", { fg = colors.keyword }) -- if, then, else, endif, switch, etc.
-  set(0, "Repeat", { fg = colors.keyword }) -- for, do, while, etc.
-  set(0, "Label", { fg = colors.keyword }) -- case, default, etc.
-  set(0, "Operator", { fg = colors.fg })  -- NOTE: This is different from others!
+    set(0, "Repeat", { fg = colors.keyword }) -- for, do, while, etc.
+    set(0, "Label", { fg = colors.keyword }) -- case, default, etc.
+    set(0, "Operator", { fg = colors.fg })  -- NOTE: This is different from others!
 
 	set(0, "Keyword", { fg = colors.keyword }) -- any other keyword
 	set(0, "Exception", { fg = colors.keyword }) -- try, catch, throw
 
 	-- PreProcessor
 	set(0, "PreProc", { fg = colors.keyword }) -- generic Preprocessor
-  set(0, "Include", { fg = colors.keyword }) -- Preprocessor #include
-  set(0, "Define", { fg = colors.keyword }) -- Preprocessor #define
-  set(0, "Macro", { fg = colors.keyword }) -- Same as Define
-  set(0, "PreCondit", { fg = colors.keyword }) -- Preprocessor #if, #else, #endif, etc.
+    set(0, "Include", { fg = colors.keyword }) -- Preprocessor #include
+    set(0, "Define", { fg = colors.keyword }) -- Preprocessor #define
+    set(0, "Macro", { fg = colors.keyword }) -- Same as Define
+    set(0, "PreCondit", { fg = colors.keyword }) -- Preprocessor #if, #else, #endif, etc.
 
 	-- Types
 	-- Built-in types for some reason fall under the Treesitter @type.builtin
-	set(0, "Type", { fg = colors.module, bold = true }) -- int, long, char, etc.
-  set(0, "StorageClass", { fg = colors.module, bold = true }) -- static, register, volatile, etc.
-  set(0, "Structure", { fg = colors.module, bold = true }) -- struct, union, enum, etc.
-  set(0, "Typedef", { fg = colors.module, bold = true }) -- a typedef
+	set(0, "Type", { fg = colors.types, bold = true }) -- int, long, char, etc.
+    set(0, "StorageClass", { fg = colors.types, bold = true }) -- static, register, volatile, etc.
+    set(0, "Structure", { fg = colors.types, bold = true }) -- struct, union, enum, etc.
+    set(0, "Typedef", { fg = colors.types, bold = true }) -- a typedef
 
 	-- Special
 	set(0, "Special", { fg = colors.bracket1 }) -- any special symbol
@@ -124,12 +125,12 @@ function M.setup()
 
 
 	-- TREESITTER HIGHLIGHT GROUPS
-	set(0, "@type.builtin", { fg = colors.module, bold = true })
-	set(0, "@variable", { fg = colors.variable })
+	set(0, "@type.builtin", { fg = colors.types, bold = true })
+	set(0, "@variable", { fg = colors.var })
 
 	-- LSP HIGHLIGHT GROUPS
-	set(0, "@lsp.type.parameter", { fg = colors.parameter })
-	set(0, "@lsp.type.variable", { fg = colors.variable })
+	set(0, "@lsp.type.parameter", { fg = colors.param })
+	set(0, "@lsp.type.variable", { fg = colors.var })
 
 	-- PLUGINS
 
