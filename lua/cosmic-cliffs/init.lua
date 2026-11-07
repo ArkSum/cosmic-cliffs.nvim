@@ -46,13 +46,12 @@ function M.setup()
 
 	-- Constants
 	set(0, "Constant", { fg = colors.const, bold = true }) -- any constant (non-variable value)
-	set(0, "@constant.builtin", { fg = colors.const, bold = true }) -- any constant (non-variable value)
 	set(0, "String", { fg = colors.string }) -- a string constant
 	set(0, "Character", { fg = colors.string }) -- a character constant
 	set(0, "Number", { fg = colors.num, bold = true }) -- an integer constant
 	set(0, "Float", { fg = colors.num, bold = true }) -- a floating point constant
 	set(0, "Boolean", { fg = colors.const, bold = true }) -- a boolean constant
-
+	set(0, "@constant.builtin", { fg = colors.const, bold = true }) -- values like None in Python
 
 	set(0, "Identifier", { fg = colors.var }) -- any variable name
 	set(0, "Function", { fg = colors.func }) -- function name (also: methods for classes)
@@ -87,13 +86,13 @@ function M.setup()
 	set(0, "SpecialChar", { fg = colors.bracket6 }) -- special character in a string constant
   -- This is something like \n in string constants
 	set(0, "Tag", { fg = colors.bracket6 }) -- you can use CTRL-] on this (XML tag delimiters???)
-  set(0, "Delimiter", { fg = colors.fg }) -- character that needs attention (period, comma, parentheses, etc.)
-  set(0, "SpecialComment", { fg = colors.ui_5 }) -- special things inside a comment (who knows what that means)
+    set(0, "Delimiter", { fg = colors.fg }) -- character that needs attention (period, comma, parentheses, etc.)
+    set(0, "SpecialComment", { fg = colors.ui_5 }) -- special things inside a comment (who knows what that means)
 
 	-- Misc
 	set(0, "Underlined", { fg = colors.command }) -- text that stands out, HTML links
 
-  set(0, "Ignore", { fg = colors.fg }) -- left blank, hidden (who knows what this means)
+    set(0, "Ignore", { fg = colors.fg }) -- left blank, hidden (who knows what this means)
 
 	set(0, "Error", { fg = colors.ansiBrightWhite, bg = colors.error }) -- any erroneous construct
 
@@ -139,7 +138,7 @@ function M.setup()
 	-- set(0, "LazyCommit", { fg = colors.red })
 
 	-- STATUSLINE = Line of text at the bottom of the interface
-  -- Uses the lualine plugin, so those are the highlight groups used
+    -- Uses the lualine plugin, so those are the highlight groups used
 
 	-- TELESCOPE
 	set(0, "TelescopeNormal", { fg = colors.fg })
